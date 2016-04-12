@@ -18,7 +18,7 @@ class ViewController: ResponsiveTextFieldViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //after registering add the account detail to a dict
-        accounts[userNameRegister.text!] = userPasswordRegister.text!
+    //    accounts[userNameRegister.text!] = userPasswordRegister.text!
         
         
     }
