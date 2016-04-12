@@ -13,6 +13,10 @@
 		7E0CAAC81CA729B300251288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC71CA729B300251288 /* Assets.xcassets */; };
 		7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC91CA729B300251288 /* LaunchScreen.storyboard */; };
 		7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */; };
+		EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */; };
+		EFF92FA51CBB33FB006F0AC8 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */; };
+		EFF92FA61CBB33FB006F0AC8 /* unchecked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA41CBB33FB006F0AC8 /* unchecked_checkbox.png */; };
+		EFF92FA81CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA71CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		7E0CAACA1CA729B300251288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E0CAACC1CA729B300251288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
+		EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_checkbox.png; sourceTree = "<group>"; };
+		EFF92FA41CBB33FB006F0AC8 /* unchecked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked_checkbox.png; sourceTree = "<group>"; };
+		EFF92FA71CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12966851_10208083734163753_996328289_n.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				7E0CAAC21CA729B300251288 /* ViewController.swift */,
 				7E0CAAC41CA729B300251288 /* Main.storyboard */,
 				7E0CAAC71CA729B300251288 /* Assets.xcassets */,
+				EFF92FA71CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png */,
+				EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */,
+				EFF92FA41CBB33FB006F0AC8 /* unchecked_checkbox.png */,
+				EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */,
 				7E0CAAC91CA729B300251288 /* LaunchScreen.storyboard */,
 				7E0CAACC1CA729B300251288 /* Info.plist */,
 				7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */,
@@ -126,6 +138,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF92FA51CBB33FB006F0AC8 /* checked_checkbox.png in Resources */,
+				EFF92FA81CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png in Resources */,
+				EFF92FA61CBB33FB006F0AC8 /* unchecked_checkbox.png in Resources */,
 				7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */,
 				7E0CAAC81CA729B300251288 /* Assets.xcassets in Resources */,
 				7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */,
@@ -139,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */,
 				7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */,
 				7E0CAAC31CA729B300251288 /* ViewController.swift in Sources */,
 				7E0CAAC11CA729B300251288 /* AppDelegate.swift in Sources */,
@@ -255,10 +271,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Quit Smoking/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "blt.Quit-Smoking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -268,10 +287,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Quit Smoking/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "blt.Quit-Smoking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

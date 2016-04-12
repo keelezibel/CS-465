@@ -20,18 +20,18 @@ class ResponsiveTextFieldViewController : UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ResponsiveTextFieldViewController.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ResponsiveTextFieldViewController.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
         for subview in self.view.subviews
         {
             if (subview.isKindOfClass(UITextField))
             {
-                var textField = subview as! UITextField
-                textField.addTarget(self, action: "textFieldDidReturn:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
+                let textField = subview as! UITextField
+                textField.addTarget(self, action: #selector(ResponsiveTextFieldViewController.textFieldDidReturn(_:)), forControlEvents: UIControlEvents.EditingDidEndOnExit)
                 
-                textField.addTarget(self, action: "textFieldDidBeginEditing:", forControlEvents: UIControlEvents.EditingDidBegin)
+                textField.addTarget(self, action: #selector(UITextFieldDelegate.textFieldDidBeginEditing(_:)), forControlEvents: UIControlEvents.EditingDidBegin)
                 
             }
         }
@@ -63,17 +63,17 @@ class ResponsiveTextFieldViewController : UIViewController
     
     func arrangeViewOffsetFromKeyboard()
     {
-        var theApp: UIApplication = UIApplication.sharedApplication()
-        var windowView: UIView? = theApp.delegate!.window!
+        let theApp: UIApplication = UIApplication.sharedApplication()
+        let windowView: UIView? = theApp.delegate!.window!
         
-        var textFieldLowerPoint: CGPoint = CGPointMake(self.activeTextField!.frame.origin.x, self.activeTextField!.frame.origin.y + self.activeTextField!.frame.size.height)
+        let textFieldLowerPoint: CGPoint = CGPointMake(self.activeTextField!.frame.origin.x, self.activeTextField!.frame.origin.y + self.activeTextField!.frame.size.height)
         
-        var convertedTextFieldLowerPoint: CGPoint = self.view.convertPoint(textFieldLowerPoint, toView: windowView)
+        let convertedTextFieldLowerPoint: CGPoint = self.view.convertPoint(textFieldLowerPoint, toView: windowView)
         
-        var targetTextFieldLowerPoint: CGPoint = CGPointMake(self.activeTextField!.frame.origin.x, self.keyboardFrame.origin.y - kPreferredTextFieldToKeyboardOffset)
+        let targetTextFieldLowerPoint: CGPoint = CGPointMake(self.activeTextField!.frame.origin.x, self.keyboardFrame.origin.y - kPreferredTextFieldToKeyboardOffset)
         
-        var targetPointOffset: CGFloat = targetTextFieldLowerPoint.y - convertedTextFieldLowerPoint.y
-        var adjustedViewFrameCenter: CGPoint = CGPointMake(self.view.center.x, self.view.center.y + targetPointOffset)
+        let targetPointOffset: CGFloat = targetTextFieldLowerPoint.y - convertedTextFieldLowerPoint.y
+        let adjustedViewFrameCenter: CGPoint = CGPointMake(self.view.center.x, self.view.center.y + targetPointOffset)
         
         if self.keyboardFrame.origin.y < self.activeTextField!.frame.origin.y {
             
@@ -87,7 +87,7 @@ class ResponsiveTextFieldViewController : UIViewController
     
     func returnViewToInitialFrame()
     {
-        var initialViewRect: CGRect = CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)
+        let initialViewRect: CGRect = CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)
         
         if (!CGRectEqualToRect(initialViewRect, self.view.frame))
         {

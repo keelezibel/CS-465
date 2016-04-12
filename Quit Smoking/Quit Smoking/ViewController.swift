@@ -7,14 +7,24 @@
 //
 
 import UIKit
-
+var accounts:[String:String] = [:]
 class ViewController: ResponsiveTextFieldViewController{
     
+    @IBOutlet var userPasswordLogin: UITextField!
+    @IBOutlet var userNameLogin: UITextField!
+    @IBOutlet var userNameRegister: UITextField!
+    @IBOutlet var userPasswordRegister: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-
+        //after registering add the account detail to a dict
+        accounts[userNameRegister.text!] = userPasswordRegister.text!
+        
+        
+    }
+    
+    func accountVerify() {
+        for 
     }
 
     override func didReceiveMemoryWarning() {
