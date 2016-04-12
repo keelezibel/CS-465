@@ -10,6 +10,15 @@ import UIKit
 var accounts:[String:String] = [:]
 class ViewController: ResponsiveTextFieldViewController{
     
+    @IBAction func loginButton(sender: AnyObject) {
+        if(accounts[userNameLogin.text!] != userPasswordLogin.text!){
+            let alertController = UIAlertController(title: "Error", message:
+                    "Your username and password don't match!", preferredStyle: UIAlertControllerStyle.Alert)
+                alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
+                
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+    }
     @IBOutlet var userPasswordLogin: UITextField!
     @IBOutlet var userNameLogin: UITextField!
     @IBOutlet var userNameRegister: UITextField!
@@ -17,16 +26,15 @@ class ViewController: ResponsiveTextFieldViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //after registering add the account detail to a dict
-        accounts[userNameRegister.text!] = userPasswordRegister.text!
         
         
-    }
-    
-    func accountVerify() {
-        for 
+        
     }
 
+    @IBAction func userCreateAccount(sender: AnyObject) {
+        //when you create account, save data to dictionary
+        accounts[userNameRegister.text!] = userPasswordRegister.text!
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
