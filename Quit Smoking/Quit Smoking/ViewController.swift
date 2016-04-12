@@ -24,7 +24,7 @@ class ViewController: ResponsiveTextFieldViewController{
     }
     
     func accountVerify() {
-        for 
+        //for
     }
 
     override func didReceiveMemoryWarning() {

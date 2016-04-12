@@ -275,7 +275,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chatroom-Bg" translatesAutoresizingMaskIntoConstraints="NO" id="TfY-y0-olj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="register" translatesAutoresizingMaskIntoConstraints="NO" id="TfY-y0-olj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </imageView>
                         </subviews>
@@ -355,7 +355,7 @@
     </scenes>
     <resources>
         <image name="12966851_10208083734163753_996328289_n.png" width="120" height="120"/>
-        <image name="Chatroom-Bg" width="640" height="1136"/>
         <image name="Maps" width="320" height="568"/>
+        <image name="register" width="320" height="568"/>
     </resources>
 </document>
