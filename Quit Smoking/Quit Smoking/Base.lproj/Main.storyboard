@@ -263,7 +263,7 @@
         <scene sceneID="XOZ-we-bvT">
             <objects>
                 <navigationController navigationBarHidden="YES" id="Hfv-Ui-9Nf" userLabel="Information" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="8Yy-QU-22m"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="icon-facebook" selectedImage="icon-facebook" id="8Yy-QU-22m"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W8k-2n-lie">
@@ -271,38 +271,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="KPi-77-eQq" kind="relationship" relationship="rootViewController" id="fLC-3i-fma"/>
+                        <segue destination="o7E-4R-Ag9" kind="relationship" relationship="rootViewController" id="8tG-PQ-Ich"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gkd-ss-oXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="934.5" y="1929.5"/>
-        </scene>
-        <!--Info-->
-        <scene sceneID="ru7-4R-hOY">
-            <objects>
-                <viewController title="Info" id="KPi-77-eQq" userLabel="Info" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2Zt-qz-HGD"/>
-                        <viewControllerLayoutGuide type="bottom" id="W9g-Tg-ofU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GQh-ae-P6b">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Chatroom-Bg" translatesAutoresizingMaskIntoConstraints="NO" id="TfY-y0-olj">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="uRb-Ac-91J"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="clR-Se-Sbs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1386.5" y="1928.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hdf-5n-y9R">
@@ -324,11 +298,11 @@
             </objects>
             <point key="canvasLocation" x="438" y="1929"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Chat-->
         <scene sceneID="0Ne-qT-e77">
             <objects>
                 <navigationController id="DSo-a7-WE6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="S0o-cm-8el"/>
+                    <tabBarItem key="tabBarItem" title="Chat" image="icon-chat-active" id="S0o-cm-8el"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Xe-cs-f2k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -367,11 +341,41 @@
             </objects>
             <point key="canvasLocation" x="1386.5" y="2773.5"/>
         </scene>
+        <!--Main-->
+        <scene sceneID="2wE-xN-S6j">
+            <objects>
+                <viewController title="Main" providesPresentationContextTransitionStyle="YES" id="o7E-4R-Ag9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gzx-Ep-Pt4"/>
+                        <viewControllerLayoutGuide type="bottom" id="z2O-JK-nKc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z8s-ps-LdM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D-23  to Goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvB-xu-oCp">
+                                <rect key="frame" x="20" y="610" width="335" height="43"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f2v-jL-rZs"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3AX-h8-1mV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1409.5" y="1928.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="12966851_10208083734163753_996328289_n.png" width="120" height="120"/>
-        <image name="Chatroom-Bg" width="640" height="1136"/>
         <image name="Maps" width="320" height="568"/>
+        <image name="icon-chat-active" width="29" height="29"/>
+        <image name="icon-facebook" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MlM-Od-1vm"/>

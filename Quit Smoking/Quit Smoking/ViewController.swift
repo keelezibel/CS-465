@@ -26,11 +26,8 @@ class ViewController: ResponsiveTextFieldViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        
-        
     }
-
+    
     @IBAction func userCreateAccount(sender: AnyObject) {
         //when you create account, save data to dictionary
         accounts[userNameRegister.text!] = userPasswordRegister.text!
