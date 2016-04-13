@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bb7-Rn-cSk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bb7-Rn-cSk">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -62,9 +62,6 @@
                                 <rect key="frame" x="70" y="383" width="24" height="22"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="12966851_10208083734163753_996328289_n.png" translatesAutoresizingMaskIntoConstraints="NO" id="qRI-cB-GLd">
-                                <rect key="frame" x="116" y="78" width="143" height="128"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0O3-mI-7IT">
                                 <rect key="frame" x="70" y="481" width="147" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -73,6 +70,9 @@
                                     <segue destination="pyq-xD-Fee" kind="push" id="N6S-NU-Tmn"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="qRI-cB-GLd">
+                                <rect key="frame" x="57" y="78" width="260" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -225,15 +225,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiZ-Nb-NNk">
-                                <rect key="frame" x="102" y="525" width="201" height="58"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Create Account"/>
-                                <connections>
-                                    <action selector="userCreateAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="ubF-sy-RN1"/>
-                                    <segue destination="zyx-bQ-AGV" kind="push" id="OeQ-up-mS5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEG-7i-Xuf" customClass="CheckBox" customModule="Quit_Smoking" customModuleProvider="target">
                                 <rect key="frame" x="127" y="333" width="24" height="22"/>
                                 <state key="normal" title="Button"/>
@@ -241,6 +232,14 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x51-MA-YoL" customClass="CheckBox" customModule="Quit_Smoking" customModuleProvider="target">
                                 <rect key="frame" x="240" y="333" width="24" height="22"/>
                                 <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiZ-Nb-NNk">
+                                <rect key="frame" x="102" y="525" width="201" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <segue destination="zyx-bQ-AGV" kind="push" id="OeQ-up-mS5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -441,7 +440,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
-                                    <action selector="userCreateAccount:" destination="zyx-bQ-AGV" eventType="touchUpInside" id="Srf-yy-Zuk"/>
                                     <segue destination="ujv-8G-uja" kind="push" id="vRy-mG-OV9"/>
                                 </connections>
                             </button>
@@ -487,7 +485,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Finish"/>
                                 <connections>
-                                    <action selector="userCreateAccount:" destination="ujv-8G-uja" eventType="touchUpInside" id="qr5-bm-Ld6"/>
                                     <segue destination="BYZ-38-t0r" kind="push" id="JkD-31-gUm"/>
                                 </connections>
                             </button>
@@ -548,7 +545,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cm3-Yc-TDt">
                                 <rect key="frame" x="5" y="146" width="364" height="225"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <mutableString key="text">Quit for money is another special function of our app, If you choose this function you will be asked to give us one of your credit/debit card information, and we will take $150 out of your account. If you have received a badge because of not smoking for a certain amount of day, we will return 10% of your total deposit to the account you provided. But if you smoked in the middle of the quit smoking session, we will donate 10% of your total deposit to charity on your behalf. If you didn't smoke at all you will get all the money returned at last. The benefit of choosing quit for money is that you can have more motivaiton to not smoking.</mutableString>
+                                <string key="text">Quit for money is another special function of our app, If you choose this function you will be asked to give us one of your credit/debit card information, and we will take $150 out of your account. If you have received a badge because of not smoking for a certain amount of day, we will return 10% of your total deposit to the account you provided. But if you smoked in the middle of the quit smoking session, we will donate 10% of your total deposit to charity on your behalf. If you didn't smoke at all you will get all the money returned at last. The benefit of choosing quit for money is that you can have more motivaiton to not smoking.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -568,13 +565,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="12966851_10208083734163753_996328289_n.png" width="120" height="120"/>
         <image name="Maps" width="320" height="568"/>
         <image name="Twitter-icon" width="256" height="256"/>
         <image name="gmail" width="500" height="500"/>
         <image name="icon-chat-active" width="29" height="29"/>
         <image name="icon-facebook" width="29" height="29"/>
         <image name="social_facebook_box_blue" width="512" height="512"/>
+        <image name="title.png" width="415" height="210"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="JkD-31-gUm"/>

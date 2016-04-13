@@ -13,10 +13,11 @@
 		7E0CAAC81CA729B300251288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC71CA729B300251288 /* Assets.xcassets */; };
 		7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC91CA729B300251288 /* LaunchScreen.storyboard */; };
 		7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */; };
+		EF3087001CBDD24A004CB7B2 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3086FF1CBDD24A004CB7B2 /* title.png */; };
 		EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */; };
 		EFF92FA51CBB33FB006F0AC8 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */; };
 		EFF92FA61CBB33FB006F0AC8 /* unchecked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA41CBB33FB006F0AC8 /* unchecked_checkbox.png */; };
-		EFF92FA81CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA71CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png */; };
+		EFF92FA81CBB3903006F0AC8 /* app_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA71CBB3903006F0AC8 /* app_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,11 @@
 		7E0CAACA1CA729B300251288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E0CAACC1CA729B300251288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
+		EF3086FF1CBDD24A004CB7B2 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_checkbox.png; sourceTree = "<group>"; };
 		EFF92FA41CBB33FB006F0AC8 /* unchecked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked_checkbox.png; sourceTree = "<group>"; };
-		EFF92FA71CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12966851_10208083734163753_996328289_n.png; sourceTree = "<group>"; };
+		EFF92FA71CBB3903006F0AC8 /* app_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,8 @@
 				7E0CAAC21CA729B300251288 /* ViewController.swift */,
 				7E0CAAC41CA729B300251288 /* Main.storyboard */,
 				7E0CAAC71CA729B300251288 /* Assets.xcassets */,
-				EFF92FA71CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png */,
+				EF3086FF1CBDD24A004CB7B2 /* title.png */,
+				EFF92FA71CBB3903006F0AC8 /* app_logo.png */,
 				EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */,
 				EFF92FA41CBB33FB006F0AC8 /* unchecked_checkbox.png */,
 				EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */,
@@ -139,8 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF92FA51CBB33FB006F0AC8 /* checked_checkbox.png in Resources */,
-				EFF92FA81CBB3903006F0AC8 /* 12966851_10208083734163753_996328289_n.png in Resources */,
+				EFF92FA81CBB3903006F0AC8 /* app_logo.png in Resources */,
 				EFF92FA61CBB33FB006F0AC8 /* unchecked_checkbox.png in Resources */,
+				EF3087001CBDD24A004CB7B2 /* title.png in Resources */,
 				7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */,
 				7E0CAAC81CA729B300251288 /* Assets.xcassets in Resources */,
 				7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */,
