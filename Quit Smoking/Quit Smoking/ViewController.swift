@@ -48,7 +48,6 @@ class MainUI:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         let items = ["Most Popular", "Latest", "Trending", "Nearest", "Top Picks"]
-        //   self.selectedCellLabel.text = items.first
         self.navigationController?.navigationBar.translucent = false
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -65,8 +64,7 @@ class MainUI:UIViewController{
         menuView.maskBackgroundColor = UIColor.blackColor()
         menuView.maskBackgroundOpacity = 0.3
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
-            //       print("Did select item at index: \(indexPath)")
-            //       self.selectedCellLabel.text = items[indexPath]
+
         }
         
         self.navigationItem.titleView = menuView
