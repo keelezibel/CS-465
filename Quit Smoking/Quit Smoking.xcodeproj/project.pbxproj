@@ -16,6 +16,7 @@
 		7E36B2091CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */; };
 		7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */; };
 		CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */; };
+		CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */; };
 		EF3087001CBDD24A004CB7B2 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3086FF1CBDD24A004CB7B2 /* title.png */; };
 		EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */; };
 		EFF92FA51CBB33FB006F0AC8 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */; };
@@ -35,6 +36,7 @@
 		7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
 		7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
 		CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewOne.swift; sourceTree = "<group>"; };
+		CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewOne.swift; sourceTree = "<group>"; };
 		EF3086FF1CBDD24A004CB7B2 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_checkbox.png; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				7E0CAACC1CA729B300251288 /* Info.plist */,
 				7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */,
 				CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */,
+				CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */,
 			);
 			path = "Quit Smoking";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */,
 				7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */,
 				7E0CAAC31CA729B300251288 /* ViewController.swift in Sources */,
+				CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */,
 				7E0CAAC11CA729B300251288 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
