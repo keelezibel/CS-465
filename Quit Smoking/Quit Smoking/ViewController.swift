@@ -65,15 +65,27 @@ class MainUI:UIViewController{
         menuView.maskBackgroundOpacity = 0.3
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
             if (indexPath == 2){
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Register", bundle:nil)
-            let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("Register") as UIViewController
-            self.presentViewController(nextViewController, animated: true, completion: nil)
+                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Register")
+                self.showViewController(vc as! UIViewController, sender: vc)
+//                self.tabBarController!.tabBar.hidden = true
+//                self.menuView.hide()
+                self.view.frame.origin.y += 300;
+                
+                
+
+                //self.performSegueWithIdentifier("modifyprof", sender: vc )
             }
 
         }
         
         self.navigationItem.titleView = menuView
     }
+}
+
+class MainUISegue:UIStoryboardSegue{
+    
+    
+    
 }
 
 
