@@ -560,10 +560,49 @@
             </objects>
             <point key="canvasLocation" x="2325.5" y="1115.5"/>
         </scene>
+        <!--Main-->
+        <scene sceneID="Gn6-1s-thI">
+            <objects>
+                <viewController title="Main" providesPresentationContextTransitionStyle="YES" id="8iB-Vi-4HC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jXY-AE-IvS"/>
+                        <viewControllerLayoutGuide type="bottom" id="MjS-nU-ehj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hwO-bp-QBF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Badges" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mU-kU-nII">
+                                <rect key="frame" x="162" y="28" width="117" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-56317" translatesAutoresizingMaskIntoConstraints="NO" id="YJZ-LK-J1v">
+                                <rect key="frame" x="98" y="24" width="60" height="55"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You earned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTu-K9-njX">
+                                <rect key="frame" x="20" y="119" width="143" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L1g-Az-Sz7"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ga-6g-ofk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1873.5" y="2030.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Twitter-icon" width="256" height="256"/>
         <image name="gmail" width="500" height="500"/>
+        <image name="icon-56317" width="128" height="128"/>
         <image name="icon-chat-active" width="29" height="29"/>
         <image name="icon-facebook" width="29" height="29"/>
         <image name="social_facebook_box_blue" width="512" height="512"/>
