@@ -1,10 +1,11 @@
 //
-//  RegisterViewone.swift
+//  RegisterViewOne.swift
 //  Quit Smoking
 //
 //  Created by Sushan Jiang on 4/12/16.
 //  Copyright © 2016 Le Tang Boon. All rights reserved.
 //
+
 
 import UIKit
 class RegisterViewone: ResponsiveTextFieldViewController, UIPickerViewDelegate, UIPickerViewDataSource{
@@ -24,9 +25,9 @@ class RegisterViewone: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
     @IBOutlet var userPasswordRegister: UITextField!
     
     
-    
     @IBOutlet weak var Picker1: UIPickerView!
     var Array = ["Less than 5", "5 to 10", "10 to 15", "15 to 20", "more than 20"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -45,6 +46,7 @@ class RegisterViewone: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }

@@ -12,12 +12,8 @@
 		7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC41CA729B300251288 /* Main.storyboard */; };
 		7E0CAAC81CA729B300251288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC71CA729B300251288 /* Assets.xcassets */; };
 		7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC91CA729B300251288 /* LaunchScreen.storyboard */; };
-		7E0F51AA1CBDDD5B00A75906 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7E0F51A81CBDDD5B00A75906 /* BTNavigationDropdownMenu.bundle */; };
-		7E0F51AB1CBDDD5B00A75906 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F51A91CBDDD5B00A75906 /* BTNavigationDropdownMenu.swift */; };
 		7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */; };
-		CFBEE1AB1CBDDC44009B73CB /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1AA1CBDDC44009B73CB /* Picker.swift */; };
-		CFBEE1AD1CBDE12B009B73CB /* RegisterViewone.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1AC1CBDE12B009B73CB /* RegisterViewone.swift */; };
-		CFBEE1AF1CBDE8F4009B73CB /* badgeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1AE1CBDE8F4009B73CB /* badgeview.swift */; };
+		CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */; };
 		EF3087001CBDD24A004CB7B2 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3086FF1CBDD24A004CB7B2 /* title.png */; };
 		EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */; };
 		EFF92FA51CBB33FB006F0AC8 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */; };
@@ -33,12 +29,8 @@
 		7E0CAAC71CA729B300251288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0CAACA1CA729B300251288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E0CAACC1CA729B300251288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E0F51A81CBDDD5B00A75906 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = BTNavigationDropdownMenu.bundle; path = "../../../../../../../../Downloads/BTNavigationDropdownMenu-master/Source/BTNavigationDropdownMenu.bundle"; sourceTree = "<group>"; };
-		7E0F51A91CBDDD5B00A75906 /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BTNavigationDropdownMenu.swift; path = "../../../../../../../../Downloads/BTNavigationDropdownMenu-master/Source/BTNavigationDropdownMenu.swift"; sourceTree = "<group>"; };
 		7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
-		CFBEE1AA1CBDDC44009B73CB /* Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
-		CFBEE1AC1CBDE12B009B73CB /* RegisterViewone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewone.swift; sourceTree = "<group>"; };
-		CFBEE1AE1CBDE8F4009B73CB /* badgeview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = badgeview.swift; sourceTree = "<group>"; };
+		CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewOne.swift; sourceTree = "<group>"; };
 		EF3086FF1CBDD24A004CB7B2 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_checkbox.png; sourceTree = "<group>"; };
@@ -76,8 +68,6 @@
 		7E0CAABF1CA729B300251288 /* Quit Smoking */ = {
 			isa = PBXGroup;
 			children = (
-				7E0F51A81CBDDD5B00A75906 /* BTNavigationDropdownMenu.bundle */,
-				7E0F51A91CBDDD5B00A75906 /* BTNavigationDropdownMenu.swift */,
 				7E0CAAC01CA729B300251288 /* AppDelegate.swift */,
 				7E0CAAC21CA729B300251288 /* ViewController.swift */,
 				7E0CAAC41CA729B300251288 /* Main.storyboard */,
@@ -90,9 +80,7 @@
 				7E0CAAC91CA729B300251288 /* LaunchScreen.storyboard */,
 				7E0CAACC1CA729B300251288 /* Info.plist */,
 				7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */,
-				CFBEE1AA1CBDDC44009B73CB /* Picker.swift */,
-				CFBEE1AC1CBDE12B009B73CB /* RegisterViewone.swift */,
-				CFBEE1AE1CBDE8F4009B73CB /* badgeview.swift */,
+				CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */,
 			);
 			path = "Quit Smoking";
 			sourceTree = "<group>";
@@ -163,7 +151,6 @@
 				7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */,
 				7E0CAAC81CA729B300251288 /* Assets.xcassets in Resources */,
 				7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */,
-				7E0F51AA1CBDDD5B00A75906 /* BTNavigationDropdownMenu.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,15 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */,
-				CFBEE1AF1CBDE8F4009B73CB /* badgeview.swift in Sources */,
+				CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */,
 				7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */,
-<<<<<<< HEAD
-				7E0F51AB1CBDDD5B00A75906 /* BTNavigationDropdownMenu.swift in Sources */,
-=======
-				CFBEE1AD1CBDE12B009B73CB /* RegisterViewone.swift in Sources */,
->>>>>>> 7b60e608b95780dfd73e4c79ca97f4cc3944d0d8
 				7E0CAAC31CA729B300251288 /* ViewController.swift in Sources */,
-				CFBEE1AB1CBDDC44009B73CB /* Picker.swift in Sources */,
 				7E0CAAC11CA729B300251288 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
