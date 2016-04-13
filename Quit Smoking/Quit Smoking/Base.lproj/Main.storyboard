@@ -41,7 +41,7 @@
                                 <state key="normal" title="Log-in"/>
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8B-tU-m8m"/>
-                                    <segue destination="IME-gc-bgQ" kind="push" id="IJJ-zU-eeD"/>
+                                    <segue destination="IME-gc-bgQ" kind="modal" id="Rxx-ID-ROi"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New User?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPN-Uk-AKG">
@@ -257,19 +257,22 @@
             </objects>
             <point key="canvasLocation" x="1381.5" y="1115.5"/>
         </scene>
-        <!--Information-->
+        <!--Main-->
         <scene sceneID="XOZ-we-bvT">
             <objects>
-                <navigationController navigationBarHidden="YES" id="Hfv-Ui-9Nf" userLabel="Information" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" image="icon-facebook" selectedImage="icon-facebook" id="8Yy-QU-22m"/>
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController title="Main" id="Hfv-Ui-9Nf" userLabel="Main" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Games" image="icon-facebook" selectedImage="icon-facebook" id="8Yy-QU-22m" userLabel="Main"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W8k-2n-lie">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ihp-2n-uFm">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="o7E-4R-Ag9" kind="relationship" relationship="rootViewController" id="8tG-PQ-Ich"/>
+                        <segue destination="o7E-4R-Ag9" kind="relationship" relationship="rootViewController" id="A3H-EJ-fc5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gkd-ss-oXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -306,6 +309,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="OuY-XG-Hbo">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="3ys-Ip-kJR" kind="relationship" relationship="rootViewController" id="kxR-pr-5fi"/>
                     </connections>
@@ -317,7 +324,7 @@
         <!--Chat-->
         <scene sceneID="Luc-XI-2QE">
             <objects>
-                <viewController title="Chatroom" id="3ys-Ip-kJR" userLabel="Chat" sceneMemberID="viewController">
+                <viewController title="Chatroom" id="3ys-Ip-kJR" userLabel="Chat" customClass="MainUI" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1x1-0i-tiL"/>
                         <viewControllerLayoutGuide type="bottom" id="9BN-0R-wZh"/>
@@ -325,11 +332,6 @@
                     <view key="view" contentMode="scaleToFill" id="lbo-OS-RgW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Maps" translatesAutoresizingMaskIntoConstraints="NO" id="0NI-I5-RVT">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="sXN-7H-qz3"/>
@@ -342,7 +344,7 @@
         <!--Main-->
         <scene sceneID="2wE-xN-S6j">
             <objects>
-                <viewController title="Main" providesPresentationContextTransitionStyle="YES" id="o7E-4R-Ag9" sceneMemberID="viewController">
+                <viewController title="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o7E-4R-Ag9" customClass="MainUI" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gzx-Ep-Pt4"/>
                         <viewControllerLayoutGuide type="bottom" id="z2O-JK-nKc"/>
@@ -350,18 +352,9 @@
                     <view key="view" contentMode="scaleToFill" id="z8s-ps-LdM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D-23  to Goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvB-xu-oCp">
-                                <rect key="frame" x="20" y="610" width="335" height="43"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="f2v-jL-rZs"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3AX-h8-1mV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -564,7 +557,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Maps" width="320" height="568"/>
         <image name="Twitter-icon" width="256" height="256"/>
         <image name="gmail" width="500" height="500"/>
         <image name="icon-chat-active" width="29" height="29"/>
