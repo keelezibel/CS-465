@@ -22,9 +22,6 @@
                                 <accessibility key="accessibilityConfiguration" identifier="password"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
-                                <connections>
-                                    <segue destination="IME-gc-bgQ" kind="modal" id="hiQ-ET-7gY"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TzK-mx-jsG">
                                 <rect key="frame" x="70" y="285" width="235" height="30"/>
@@ -39,11 +36,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZb-1U-3ZH">
-                                <rect key="frame" x="254" y="376" width="51" height="36"/>
+                                <rect key="frame" x="254" y="376" width="51" height="35.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Log-in"/>
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8B-tU-m8m"/>
+                                    <segue destination="IME-gc-bgQ" kind="push" id="IJJ-zU-eeD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New User?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPN-Uk-AKG">
@@ -234,10 +232,11 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiZ-Nb-NNk">
-                                <rect key="frame" x="102" y="525" width="201" height="58"/>
+                                <rect key="frame" x="102" y="526" width="201" height="58"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Create Account"/>
                                 <connections>
+                                    <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="Lpj-1F-uFn"/>
                                     <segue destination="zyx-bQ-AGV" kind="push" id="OeQ-up-mS5"/>
                                 </connections>
                             </button>
@@ -369,7 +368,7 @@
             </objects>
             <point key="canvasLocation" x="1409.5" y="1928.5"/>
         </scene>
-        <!--Register-->
+        <!--Buddy System-->
         <scene sceneID="Uwh-VS-F8I">
             <objects>
                 <viewController id="zyx-bQ-AGV" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
@@ -447,7 +446,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Register" id="83y-Ca-dHf"/>
+                    <navigationItem key="navigationItem" title="Buddy System" id="83y-Ca-dHf"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -456,7 +455,7 @@
             </objects>
             <point key="canvasLocation" x="1861.5" y="1297.5"/>
         </scene>
-        <!--Register-->
+        <!--Quit for money-->
         <scene sceneID="9q7-jf-cbD">
             <objects>
                 <viewController id="ujv-8G-uja" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
@@ -554,7 +553,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Register" id="Se7-34-7wO"/>
+                    <navigationItem key="navigationItem" title="Quit for money" id="Se7-34-7wO"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

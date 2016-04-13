@@ -28,10 +28,12 @@ class ViewController: ResponsiveTextFieldViewController{
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    @IBAction func userCreateAccount(sender: AnyObject) {
-        //when you create account, save data to dictionary
+    @IBAction func createAccount(sender: AnyObject) {
         accounts[userNameRegister.text!] = userPasswordRegister.text!
+        print(userNameRegister)
+        print(userPasswordRegister)
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
