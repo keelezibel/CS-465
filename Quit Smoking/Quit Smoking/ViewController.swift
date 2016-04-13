@@ -48,7 +48,7 @@ class MainUI:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         let items = ["Settings", "Daily Reminder", "Modify Profile", "Badges", "Change Quit 4 Money Plan", "Product Info"]
-        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
@@ -65,18 +65,21 @@ class MainUI:UIViewController{
         menuView.maskBackgroundOpacity = 0.3
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
             if (indexPath == 2){
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Register", bundle:nil)
-            let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("Register") as UIViewController
-            self.presentViewController(nextViewController, animated: true, completion: nil)
+                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Profile")
+                self.showViewController(vc as! UIViewController, sender: vc)
+               
+            }
+            if (indexPath == 3){
+                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Badges")
+                self.showViewController(vc as! UIViewController, sender: vc)
+               
             }
 
         }
-        
         self.navigationItem.titleView = menuView
     }
+    
 }
-
-
 
 
 
