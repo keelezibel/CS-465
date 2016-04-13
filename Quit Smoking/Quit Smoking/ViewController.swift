@@ -65,6 +65,7 @@ class MainUI:UIViewController{
         menuView.maskBackgroundOpacity = 0.3
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
             if (indexPath == 2){
+<<<<<<< HEAD
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Profile")
                 self.showViewController(vc as! UIViewController, sender: vc)
                
@@ -73,11 +74,28 @@ class MainUI:UIViewController{
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Badges")
                 self.showViewController(vc as! UIViewController, sender: vc)
                
+=======
+                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Register")
+                self.showViewController(vc as! UIViewController, sender: vc)
+//                self.tabBarController!.tabBar.hidden = true
+//                self.menuView.hide()
+                self.view.frame.origin.y += 300;
+                
+                
+
+                //self.performSegueWithIdentifier("modifyprof", sender: vc )
+>>>>>>> d2206b29c36adde547b31840fcc808cc02a959a8
             }
 
         }
         self.navigationItem.titleView = menuView
     }
+    
+}
+
+class MainUISegue:UIStoryboardSegue{
+    
+    
     
 }
 
