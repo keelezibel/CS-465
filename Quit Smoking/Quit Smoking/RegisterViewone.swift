@@ -8,7 +8,7 @@
 
 
 import UIKit
-class RegisterViewone: ResponsiveTextFieldViewController, UIPickerViewDelegate, UIPickerViewDataSource{
+class RegisterViewOne: ResponsiveTextFieldViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
     @IBAction func loginButton(sender: AnyObject) {
         if(accounts[userNameLogin.text!] != userPasswordLogin.text!){
