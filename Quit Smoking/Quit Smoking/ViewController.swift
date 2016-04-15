@@ -73,6 +73,14 @@ class MainUI:UIViewController{
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Badges")
                 self.showViewController(vc as! UIViewController, sender: vc)
             }
+            if (indexPath == 4){
+                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Q4M_main")
+                self.showViewController(vc as! UIViewController, sender: vc)
+            }
+            if (indexPath == 5){
+                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Product_Info")
+                self.showViewController(vc as! UIViewController, sender: vc)
+            }
 
         }
         self.navigationItem.titleView = menuView
