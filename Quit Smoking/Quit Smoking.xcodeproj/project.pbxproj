@@ -10,11 +10,11 @@
 		7E0CAAC11CA729B300251288 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC01CA729B300251288 /* AppDelegate.swift */; };
 		7E0CAAC31CA729B300251288 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC21CA729B300251288 /* ViewController.swift */; };
 		7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC41CA729B300251288 /* Main.storyboard */; };
-		7E0CAAC81CA729B300251288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC71CA729B300251288 /* Assets.xcassets */; };
 		7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC91CA729B300251288 /* LaunchScreen.storyboard */; };
 		7E36B2071CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7E36B2061CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle */; };
 		7E36B2091CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */; };
 		7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */; };
+		7ED4ED701CC0874C0004C7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED4ED6F1CC0874C0004C7B3 /* Assets.xcassets */; };
 		CF56C75E1CC07F6700CDA8BC /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C75D1CC07F6700CDA8BC /* FileUtils.swift */; };
 		CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */; };
 		CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */; };
@@ -30,12 +30,12 @@
 		7E0CAAC01CA729B300251288 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E0CAAC21CA729B300251288 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E0CAAC51CA729B300251288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7E0CAAC71CA729B300251288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E0CAACA1CA729B300251288 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E0CAACC1CA729B300251288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E36B2061CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
 		7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
 		7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
+		7ED4ED6F1CC0874C0004C7B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF56C75D1CC07F6700CDA8BC /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 		CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewOne.swift; sourceTree = "<group>"; };
 		CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewOne.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 				7E0CAAC01CA729B300251288 /* AppDelegate.swift */,
 				7E0CAAC21CA729B300251288 /* ViewController.swift */,
 				7E0CAAC41CA729B300251288 /* Main.storyboard */,
-				7E0CAAC71CA729B300251288 /* Assets.xcassets */,
+				7ED4ED6F1CC0874C0004C7B3 /* Assets.xcassets */,
 				EF3086FF1CBDD24A004CB7B2 /* title.png */,
 				EFF92FA71CBB3903006F0AC8 /* app_logo.png */,
 				EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */,
@@ -161,8 +161,8 @@
 				EFF92FA61CBB33FB006F0AC8 /* unchecked_checkbox.png in Resources */,
 				EF3087001CBDD24A004CB7B2 /* title.png in Resources */,
 				7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */,
-				7E0CAAC81CA729B300251288 /* Assets.xcassets in Resources */,
 				7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */,
+				7ED4ED701CC0874C0004C7B3 /* Assets.xcassets in Resources */,
 				7E36B2071CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

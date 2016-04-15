@@ -267,7 +267,7 @@
         <scene sceneID="XOZ-we-bvT">
             <objects>
                 <navigationController title="Main Controller" id="Hfv-Ui-9Nf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Main" image="icon-facebook" id="NuK-yu-xLI"/>
+                    <tabBarItem key="tabBarItem" title="Main" image="icon-home" id="NuK-yu-xLI"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="W8k-2n-lie">
@@ -627,7 +627,7 @@
         <scene sceneID="rmd-Nc-hXV">
             <objects>
                 <navigationController title="Games Controller" id="11e-eR-3bv" userLabel="Games Controller" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" image="icon-camera" id="aoJ-Es-gYw"/>
+                    <tabBarItem key="tabBarItem" title="Games" image="icon-game" id="aoJ-Es-gYw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jeR-rC-POJ">
@@ -964,9 +964,9 @@ Yerim Park</string>
         <image name="Twitter-icon" width="256" height="256"/>
         <image name="gmail" width="500" height="500"/>
         <image name="icon-56317" width="128" height="128"/>
-        <image name="icon-camera" width="29" height="29"/>
         <image name="icon-chat-active" width="29" height="29"/>
-        <image name="icon-facebook" width="29" height="29"/>
+        <image name="icon-game" width="29" height="29"/>
+        <image name="icon-home" width="29" height="29"/>
         <image name="social_facebook_box_blue" width="512" height="512"/>
         <image name="title.png" width="415" height="210"/>
     </resources>
