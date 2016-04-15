@@ -252,6 +252,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Picker1" destination="eBs-SC-ygb" id="Jn6-ys-4MO"/>
+                        <outlet property="userAgeReg" destination="B5f-XK-eAF" id="RBX-zG-WUM"/>
+                        <outlet property="userFnameReg" destination="3oa-iO-QD3" id="10b-Ck-Faf"/>
+                        <outlet property="userLnameReg" destination="EUA-Ab-IZe" id="0ar-TD-XAo"/>
                         <outlet property="userNameRegister" destination="ZeO-Lw-5ea" id="HoI-0V-pdI"/>
                         <outlet property="userPasswordRegister" destination="MZH-tS-ohp" id="YU8-pw-YdB"/>
                     </connections>

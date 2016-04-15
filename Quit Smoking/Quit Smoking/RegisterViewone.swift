@@ -24,6 +24,13 @@ class RegisterViewone: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
     @IBOutlet var userNameRegister: UITextField!
     @IBOutlet var userPasswordRegister: UITextField!
     
+    @IBOutlet weak var userFnameReg: UITextField!
+    
+    @IBOutlet weak var userLnameReg: UITextField!
+    
+    @IBOutlet weak var userAgeReg: UITextField!
+    
+    
     
     @IBOutlet weak var Picker1: UIPickerView!
     var Array = ["Less than 5", "5 to 10", "10 to 15", "15 to 20", "more than 20"]
@@ -38,8 +45,34 @@ class RegisterViewone: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
     
     @IBAction func createAccount(sender: AnyObject) {
         accounts[userNameRegister.text!] = userPasswordRegister.text!
-        print(userNameRegister)
-        print(userPasswordRegister)
+        //print(userNameRegister)
+        //print(userPasswordRegister)
+        
+        
+        let logFileProfile = FileUtils(fileName: "ProfileLog.csv")
+        let logFileAccount = FileUtils(fileName: "AccountLog.csv")
+        logFileProfile.clearFile()
+        logFileAccount.clearFile()
+        print("Saving Log Data1 ...")
+        let logEntryProfile = "\(userFnameReg.text!),\(userLnameReg.text!),\(userAgeReg.text!)\n"
+        print( logEntryProfile )
+        let retVal1 = logFileProfile.appendFile(logEntryProfile)
+        print("Entire File: \n" )
+        print(logFileProfile.readFile())
+        
+        print( retVal1 ?  "File Saved":
+            "File Error")
+        
+        
+        print("Saving Log Data2 ...")
+        let logEntryAccount = "\(userNameRegister.text!),\(userPasswordRegister.text!)\n"
+        print( logEntryAccount )
+        let retVal2 = logFileAccount.appendFile(logEntryAccount)
+        print("Entire File: \n" )
+        print(logFileAccount.readFile())
+        
+        print( retVal2 ?  "File Saved":
+            "File Error")
     }
     
     override func didReceiveMemoryWarning() {
