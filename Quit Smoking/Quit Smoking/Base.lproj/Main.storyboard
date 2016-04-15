@@ -65,7 +65,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Create an Account"/>
                                 <connections>
-                                    <segue destination="pyq-xD-Fee" kind="push" id="N6S-NU-Tmn"/>
+                                    <segue destination="pyq-xD-Fee" kind="show" id="N6S-NU-Tmn"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="qRI-cB-GLd">
@@ -239,7 +239,7 @@
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="Lpj-1F-uFn"/>
-                                    <segue destination="zyx-bQ-AGV" kind="push" id="OeQ-up-mS5"/>
+                                    <segue destination="zyx-bQ-AGV" kind="show" id="OeQ-up-mS5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -356,6 +356,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D-23  to Goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvB-xu-oCp">
                                 <rect key="frame" x="20" y="565" width="335" height="43"/>
+                                <color key="backgroundColor" red="1" green="0.40736800436631782" blue="0.53174401484546097" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -442,7 +443,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
-                                    <segue destination="ujv-8G-uja" kind="push" id="vRy-mG-OV9"/>
+                                    <segue destination="ujv-8G-uja" kind="show" id="vRy-mG-OV9"/>
                                 </connections>
                             </button>
                         </subviews>
