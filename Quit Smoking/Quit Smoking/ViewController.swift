@@ -39,18 +39,12 @@ class ViewController: ResponsiveTextFieldViewController{
     }
     @IBOutlet var userPasswordLogin: UITextField!
     @IBOutlet var userNameLogin: UITextField!
-    @IBOutlet var userNameRegister: UITextField!
-    @IBOutlet var userPasswordRegister: UITextField!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    @IBAction func createAccount(sender: AnyObject) {
-        accounts[userNameRegister.text!] = userPasswordRegister.text!
-        print(userNameRegister)
-        print(userPasswordRegister)
-    }
+  
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -108,11 +102,7 @@ class MainUI:UIViewController{
     
 }
 
-class MainUISegue:UIStoryboardSegue{
-    
-    
-    
-}
+
 
 
 
