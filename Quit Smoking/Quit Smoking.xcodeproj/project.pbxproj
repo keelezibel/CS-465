@@ -16,6 +16,7 @@
 		7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */; };
 		7ED4ED701CC0874C0004C7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED4ED6F1CC0874C0004C7B3 /* Assets.xcassets */; };
 		CF56C75E1CC07F6700CDA8BC /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C75D1CC07F6700CDA8BC /* FileUtils.swift */; };
+		CF56C7661CC1CF6000CDA8BC /* RegisterSaveOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7651CC1CF6000CDA8BC /* RegisterSaveOne.swift */; };
 		CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */; };
 		CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */; };
 		EF3087001CBDD24A004CB7B2 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3086FF1CBDD24A004CB7B2 /* title.png */; };
@@ -37,6 +38,7 @@
 		7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
 		7ED4ED6F1CC0874C0004C7B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF56C75D1CC07F6700CDA8BC /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		CF56C7651CC1CF6000CDA8BC /* RegisterSaveOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterSaveOne.swift; sourceTree = "<group>"; };
 		CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewOne.swift; sourceTree = "<group>"; };
 		CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewOne.swift; sourceTree = "<group>"; };
 		EF3086FF1CBDD24A004CB7B2 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */,
 				CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */,
 				CF56C75D1CC07F6700CDA8BC /* FileUtils.swift */,
+				CF56C7651CC1CF6000CDA8BC /* RegisterSaveOne.swift */,
 			);
 			path = "Quit Smoking";
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */,
 				7E0CAAC31CA729B300251288 /* ViewController.swift in Sources */,
 				CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */,
+				CF56C7661CC1CF6000CDA8BC /* RegisterSaveOne.swift in Sources */,
 				7E0CAAC11CA729B300251288 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -64,6 +64,7 @@ class MainUI:UIViewController{
     
     var menuView: BTNavigationDropdownMenu!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         let nav_bar_header = "Settings"
         let items = ["Modify Profile", "Badges", "Change Quit 4 Money Plan", "Product Info"]
@@ -77,7 +78,7 @@ class MainUI:UIViewController{
         menuView.cellSelectionColor = UIColor(red: 0.0/255.0, green:160.0/255.0, blue:195.0/255.0, alpha: 1.0)
         menuView.cellTextLabelColor = UIColor.whiteColor()
         menuView.cellTextLabelFont = UIFont(name: "Avenir-Heavy", size: 17)
-        menuView.cellTextLabelAlignment = .Center 
+        menuView.cellTextLabelAlignment = .Center
         menuView.arrowPadding = 15
         menuView.animationDuration = 0.5
         menuView.maskBackgroundColor = UIColor.blackColor()
@@ -86,7 +87,7 @@ class MainUI:UIViewController{
             if (indexPath == 0){
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Profile")
                 self.showViewController(vc as! UIViewController, sender: vc)
-               
+                
             }
             if (indexPath == 1){
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Badges")
@@ -100,7 +101,7 @@ class MainUI:UIViewController{
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Product_Info")
                 self.showViewController(vc as! UIViewController, sender: vc)
             }
-
+            
         }
         self.navigationItem.titleView = menuView
     }

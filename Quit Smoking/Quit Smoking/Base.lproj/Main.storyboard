@@ -717,7 +717,7 @@ Yerim Park</string>
         <!--Profile-->
         <scene sceneID="rZL-aV-hWh">
             <objects>
-                <viewController storyboardIdentifier="Profile" title="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5bK-DJ-AdL" customClass="RegisterViewOne" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" title="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5bK-DJ-AdL" customClass="RegisterSaveOne" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mOO-Q4-eA0"/>
                         <viewControllerLayoutGuide type="bottom" id="n1U-Ia-kaS"/>
@@ -758,11 +758,6 @@ Yerim Park</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cF2-af-VaG">
-                                <rect key="frame" x="122" y="225" width="222" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xcp-0d-bAa">
                                 <rect key="frame" x="22" y="81" width="92" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -842,6 +837,19 @@ Yerim Park</string>
                                     <outlet property="dataSource" destination="5bK-DJ-AdL" id="1u9-2j-6z7"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCL-vk-0Xw">
+                                <rect key="frame" x="269" y="582" width="34" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="changeAccount:" destination="5bK-DJ-AdL" eventType="touchUpInside" id="18f-7X-F6C"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cF2-af-VaG">
+                                <rect key="frame" x="121" y="225" width="222" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -852,8 +860,11 @@ Yerim Park</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Picker1" destination="AJ7-BW-oC8" id="ucg-S9-2bY"/>
-                        <outlet property="userNameRegister" destination="zpC-0p-OR6" id="zCT-IC-WHY"/>
-                        <outlet property="userPasswordRegister" destination="cF2-af-VaG" id="t5l-qL-EYL"/>
+                        <outlet property="UserAgeReg" destination="EUY-Yf-UPB" id="dBx-BX-SeZ"/>
+                        <outlet property="UserFnameReg" destination="OE1-fV-8JI" id="xCl-t1-bI9"/>
+                        <outlet property="UserNameReg" destination="zpC-0p-OR6" id="ezy-w6-pp6"/>
+                        <outlet property="UserPwReg" destination="cF2-af-VaG" id="Wi3-C1-5K0"/>
+                        <outlet property="userLnameReg" destination="qAd-vX-hxh" id="KuJ-w2-azm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XKw-sX-Lmc" sceneMemberID="firstResponder"/>
