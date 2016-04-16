@@ -289,7 +289,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="hdf-5n-y9R">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IME-gc-bgQ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbarMain" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IME-gc-bgQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Bds-zq-azD"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -328,7 +328,7 @@
         <!--Chat-->
         <scene sceneID="Luc-XI-2QE">
             <objects>
-                <viewController title="Chatroom" id="3ys-Ip-kJR" userLabel="Chat" customClass="MainUI" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Chatroom" id="3ys-Ip-kJR" userLabel="Chat" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1x1-0i-tiL"/>
                         <viewControllerLayoutGuide type="bottom" id="9BN-0R-wZh"/>
@@ -345,7 +345,7 @@
             </objects>
             <point key="canvasLocation" x="1050.5" y="3165.5"/>
         </scene>
-        <!--Main-->
+        <!--Calendar Appearance Delegate-->
         <scene sceneID="2wE-xN-S6j">
             <objects>
                 <viewController storyboardIdentifier="Main" title="Main" providesPresentationContextTransitionStyle="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o7E-4R-Ag9" customClass="MainUI" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
@@ -357,18 +357,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D-23  to Goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvB-xu-oCp">
-                                <rect key="frame" x="20" y="565" width="335" height="43"/>
-                                <color key="backgroundColor" red="1" green="0.40736800436631782" blue="0.53174401484546097" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOo-Zd-ueP">
+                                <rect key="frame" x="306" y="535" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChanged:" destination="o7E-4R-Ag9" eventType="valueChanged" id="fq0-9y-EhY"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG0-bL-X00">
+                                <rect key="frame" x="198" y="460" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="loadNext:" destination="o7E-4R-Ag9" eventType="touchUpInside" id="7ef-J3-rKd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czE-gA-nbN">
+                                <rect key="frame" x="129" y="460" width="31" height="30"/>
+                                <state key="normal" title="Prev"/>
+                                <connections>
+                                    <action selector="loadPrevious:" destination="o7E-4R-Ag9" eventType="touchUpInside" id="aQ8-hD-I7I"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kfj-IX-VI0" customClass="CVCalendarView" customModule="Quit_Smoking" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="167" width="375" height="279"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="NpJ-uR-r0l"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="calendarAppearanceDelegate" destination="o7E-4R-Ag9" id="6sT-Cb-7qe"/>
+                                    <outlet property="calendarDelegate" destination="o7E-4R-Ag9" id="Krw-xr-L6z"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sM-Xt-s8O" customClass="CVCalendarMenuView" customModule="Quit_Smoking" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="111" width="375" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="menuViewDelegate" destination="o7E-4R-Ag9" id="Vv8-Q3-XP8"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wT5-Ay-yAd">
+                                <rect key="frame" x="306" y="460" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="refreshMonth:" destination="o7E-4R-Ag9" eventType="touchUpInside" id="5Za-RL-ywI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="January, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3j-jJ-8uX">
+                                <rect key="frame" x="114" y="77" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqA-aX-76T">
+                                <rect key="frame" x="9" y="73" width="39" height="30"/>
+                                <state key="normal" title="Week"/>
+                                <connections>
+                                    <action selector="toWeekView:" destination="o7E-4R-Ag9" eventType="touchUpInside" id="xYu-7W-JR4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x25-Iy-ae5">
+                                <rect key="frame" x="57" y="73" width="44" height="30"/>
+                                <state key="normal" title="Month"/>
+                                <connections>
+                                    <action selector="toMonthView:" destination="o7E-4R-Ag9" eventType="touchUpInside" id="tBG-VR-JMm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYb-7K-B9B">
+                                <rect key="frame" x="321" y="72" width="42" height="30"/>
+                                <state key="normal" title="Today"/>
+                                <connections>
+                                    <action selector="todayMonthView" destination="o7E-4R-Ag9" eventType="touchUpInside" id="nA9-KM-6BP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjX-cL-XvF">
+                                <rect key="frame" x="129" y="540" width="155" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7K-r1-5V3">
+                                <rect key="frame" x="14" y="460" width="55" height="30"/>
+                                <state key="normal" title="Remove"/>
+                                <connections>
+                                    <action selector="removeCircleAndDot:" destination="o7E-4R-Ag9" eventType="touchUpInside" id="A9p-9y-3es"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="f2v-jL-rZs"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="calendarView" destination="Kfj-IX-VI0" id="4o9-cb-HbU"/>
+                        <outlet property="daysOutSwitch" destination="uOo-Zd-ueP" id="fNT-g7-MMD"/>
+                        <outlet property="menuCalView" destination="8sM-Xt-s8O" id="inV-6X-Vk6"/>
+                        <outlet property="monthLabel" destination="q3j-jJ-8uX" id="liV-D1-2VC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3AX-h8-1mV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -653,7 +737,7 @@
         <!--Games-->
         <scene sceneID="I4s-bQ-3Kg">
             <objects>
-                <viewController title="Games" id="uAz-ym-k1K" userLabel="Games" customClass="MainUI" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Games" id="uAz-ym-k1K" userLabel="Games" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RXU-Yh-h3b"/>
                         <viewControllerLayoutGuide type="bottom" id="PrN-IV-8Hi"/>
@@ -1027,6 +1111,13 @@ Yerim Park</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ae-ej-69b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2844.5" y="2079.5"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="KPE-cy-VCm">
+            <objects>
+                <viewControllerPlaceholder id="tbq-ti-6Kp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFR-qU-8SE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
