@@ -107,7 +107,7 @@
         <!--Register-->
         <scene sceneID="OZw-3c-uXv">
             <objects>
-                <viewController storyboardIdentifier="Register" title="Register" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pyq-xD-Fee" customClass="RegisterViewone" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Register" title="Register" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pyq-xD-Fee" customClass="RegisterViewOne" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8GO-A6-TxS"/>
                         <viewControllerLayoutGuide type="bottom" id="r5n-Ck-lSf"/>
@@ -717,7 +717,7 @@ Yerim Park</string>
         <!--Profile-->
         <scene sceneID="rZL-aV-hWh">
             <objects>
-                <viewController storyboardIdentifier="Profile" title="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5bK-DJ-AdL" customClass="RegisterViewone" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" title="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5bK-DJ-AdL" customClass="RegisterViewOne" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mOO-Q4-eA0"/>
                         <viewControllerLayoutGuide type="bottom" id="n1U-Ia-kaS"/>

@@ -13,7 +13,23 @@ var accounts:[String:String] = [:]
 class ViewController: ResponsiveTextFieldViewController{
     
     @IBAction func loginButton(sender: AnyObject) {
-        if(accounts[userNameLogin.text!] != userPasswordLogin.text!){
+        
+        let AccountFile=FileUtils(fileName: "AccountLog.csv")
+        
+        if(!AccountFile.fileExists()){
+            
+            let alertController = UIAlertController(title: "Error", message:
+                "This username does not exist", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }
+        let returnval = AccountFile.readFile()
+        let returnvalArr = returnval.characters.split{$0 == ","}.map(String.init)
+        print(returnvalArr[0])
+        print(returnvalArr[1])
+        let newStringreturnval = returnvalArr[1].stringByReplacingOccurrencesOfString("\n", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        if(!(returnvalArr[0] == userNameLogin.text! && newStringreturnval == userPasswordLogin.text!)){
             let alertController = UIAlertController(title: "Error", message:
                     "Your username and password don't match!", preferredStyle: UIAlertControllerStyle.Alert)
                 alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
