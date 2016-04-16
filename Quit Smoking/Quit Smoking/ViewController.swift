@@ -65,12 +65,13 @@ class MainUI:UIViewController{
     var menuView: BTNavigationDropdownMenu!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let items = ["Settings", "Daily Reminder", "Modify Profile", "Badges", "Change Quit 4 Money Plan", "Product Info"]
+        let nav_bar_header = "Settings"
+        let items = ["Modify Profile", "Badges", "Change Quit 4 Money Plan", "Product Info"]
         self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         
-        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: items.first!, items: items)
+        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: nav_bar_header, items: items)
         menuView.cellHeight = 50
         menuView.cellBackgroundColor = self.navigationController?.navigationBar.barTintColor
         menuView.cellSelectionColor = UIColor(red: 0.0/255.0, green:160.0/255.0, blue:195.0/255.0, alpha: 1.0)
@@ -82,20 +83,20 @@ class MainUI:UIViewController{
         menuView.maskBackgroundColor = UIColor.blackColor()
         menuView.maskBackgroundOpacity = 0.3
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
-            if (indexPath == 2){
+            if (indexPath == 0){
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Profile")
                 self.showViewController(vc as! UIViewController, sender: vc)
                
             }
-            if (indexPath == 3){
+            if (indexPath == 1){
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Badges")
                 self.showViewController(vc as! UIViewController, sender: vc)
             }
-            if (indexPath == 4){
+            if (indexPath == 2){
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Q4M_main")
                 self.showViewController(vc as! UIViewController, sender: vc)
             }
-            if (indexPath == 5){
+            if (indexPath == 3){
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Product_Info")
                 self.showViewController(vc as! UIViewController, sender: vc)
             }
