@@ -76,6 +76,7 @@
 		7E0CAABF1CA729B300251288 /* Quit Smoking */ = {
 			isa = PBXGroup;
 			children = (
+				7ECE14361CC092210018056F /* Delegates */,
 				7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */,
 				7E36B2061CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle */,
 				7E0CAAC01CA729B300251288 /* AppDelegate.swift */,
@@ -95,6 +96,13 @@
 				CF56C75D1CC07F6700CDA8BC /* FileUtils.swift */,
 			);
 			path = "Quit Smoking";
+			sourceTree = "<group>";
+		};
+		7ECE14361CC092210018056F /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
