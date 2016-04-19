@@ -23,7 +23,7 @@ class ViewController: ResponsiveTextFieldViewController{
             alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
             
             self.presentViewController(alertController, animated: true, completion: nil)
-        }
+        }else{
         let returnval = AccountFile.readFile()
         let returnvalArr = returnval.characters.split{$0 == ","}.map(String.init)
         print(returnvalArr[0])
@@ -35,6 +35,7 @@ class ViewController: ResponsiveTextFieldViewController{
                 alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
                 
             self.presentViewController(alertController, animated: true, completion: nil)
+        }
         }
     }
     @IBOutlet var userPasswordLogin: UITextField!
