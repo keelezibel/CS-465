@@ -341,7 +341,20 @@
                                 <rect key="frame" x="0.0" y="569" width="375" height="49"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFl-cS-iq8">
-                                <rect key="frame" x="20" y="578" width="280" height="30"/>
+                                <rect key="frame" x="20" y="580" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKX-NJ-vZe">
+                                <rect key="frame" x="319" y="580" width="36" height="30"/>
+                                <state key="normal" title="Send"/>
+                            </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yHs-9d-ZHf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YWR-yk-grn">
+                                <rect key="frame" x="58" y="161" width="152" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1139,7 +1152,7 @@ Yerim Park</string>
         <image name="icon-home" width="29" height="29"/>
         <image name="social_facebook_box_blue" width="512" height="512"/>
         <image name="textfield_background" width="321" height="49"/>
-        <image name="title.png" width="16" height="16"/>
+        <image name="title.png" width="415" height="210"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HXy-0I-WBb"/>
