@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZb-1U-3ZH">
-                                <rect key="frame" x="254" y="376" width="51" height="35.5"/>
+                                <rect key="frame" x="254" y="376" width="51" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Log-in"/>
                                 <connections>
@@ -336,6 +336,16 @@
                     <view key="view" contentMode="scaleToFill" id="lbo-OS-RgW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="textfield_background" translatesAutoresizingMaskIntoConstraints="NO" id="mfs-QZ-6rI">
+                                <rect key="frame" x="0.0" y="569" width="375" height="49"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFl-cS-iq8">
+                                <rect key="frame" x="20" y="578" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="sXN-7H-qz3"/>
@@ -501,17 +511,17 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yes, I want to use buddy system function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBy-rf-AVQ">
-                                <rect key="frame" x="75" y="366" width="280" height="24.5"/>
+                                <rect key="frame" x="75" y="366" width="280" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAq-Iz-yFm">
-                                <rect key="frame" x="36" y="431.5" width="43" height="46.5"/>
+                                <rect key="frame" x="36" y="432" width="43" height="46"/>
                                 <state key="normal" title="Button" image="social_facebook_box_blue"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMU-Ga-aei">
-                                <rect key="frame" x="113" y="433" width="45" height="44.5"/>
+                                <rect key="frame" x="113" y="433" width="45" height="45"/>
                                 <state key="normal" title="Button" image="Twitter-icon"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jom-J9-EYK">
@@ -589,7 +599,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yes, I want to use quit for money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DW0-zP-zmq">
-                                <rect key="frame" x="75" y="379.5" width="280" height="24.5"/>
+                                <rect key="frame" x="75" y="380" width="280" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1006,7 +1016,7 @@ Yerim Park</string>
                                 <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yes, I want to use quit for money" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdp-Z7-6Ud">
-                                <rect key="frame" x="75" y="379.5" width="280" height="24.5"/>
+                                <rect key="frame" x="75" y="380" width="280" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1128,9 +1138,10 @@ Yerim Park</string>
         <image name="icon-game" width="29" height="29"/>
         <image name="icon-home" width="29" height="29"/>
         <image name="social_facebook_box_blue" width="512" height="512"/>
-        <image name="title.png" width="415" height="210"/>
+        <image name="textfield_background" width="321" height="49"/>
+        <image name="title.png" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JkD-31-gUm"/>
+        <segue reference="HXy-0I-WBb"/>
     </inferredMetricsTieBreakers>
 </document>
