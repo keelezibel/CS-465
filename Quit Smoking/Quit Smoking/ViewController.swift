@@ -27,7 +27,7 @@ class ViewController: ResponsiveTextFieldViewController{
         let returnval = AccountFile.readFile()
         let returnvalArr = returnval.characters.split{$0 == ","}.map(String.init)
         print(returnvalArr[0])
-        print(returnvalArr[1])
+        print(returnvalArr[1])  // BUGGGGG!!!!
         let newStringreturnval = returnvalArr[1].stringByReplacingOccurrencesOfString("\n", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil)
         if(!(returnvalArr[0] == userNameLogin.text! && newStringreturnval == userPasswordLogin.text!)){
             let alertController = UIAlertController(title: "Error", message:
