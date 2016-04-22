@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "register.png",
+      "filename" : "launchscreen.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "register2.png",
       "scale" : "2x"
     },
     {

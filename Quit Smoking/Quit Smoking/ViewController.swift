@@ -44,6 +44,13 @@ class ViewController: ResponsiveTextFieldViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //self.navigationController!.navigationBarHidden = true;
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        //self.navigationController!.navigationBarHidden = false;
     }
   
 
@@ -110,19 +117,18 @@ class MainUI:UIViewController{
             
         }
         self.navigationItem.titleView = menuView
+        calendarView.changeDaysOutShowingState(true)
+        shouldShowDaysOut = true
     }
     
-    @IBAction func removeCircleAndDot(sender: AnyObject) {
-        if let dayView = selectedDay {
-            calendarView.contentController.removeCircleLabel(dayView)
-            calendarView.contentController.removeDotViews(dayView)
-        }
+    @IBAction func addCircleAndDot(sender: AnyObject){
+       // if let dayView = selectedDay {
+            //calendarView.contentController.removeCircleLabel(dayView)
+            //calendarView.contentController.removeDotViews(dayView)
+            //supplementaryView(viewOnDayView: selectedDay)
+        //}
     }
-    
-    
-    @IBAction func refreshMonth(sender: AnyObject) {
-        calendarView.contentController.refreshPresentedMonth()
-    }
+
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -146,7 +152,7 @@ extension MainUI: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
         return .Sunday
     }
     
- /*   // MARK: Optional methods
+    // MARK: Optional methods
     
     func shouldShowWeekdaysOut() -> Bool {
         return shouldShowDaysOut
@@ -160,7 +166,7 @@ extension MainUI: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
         print("\(dayView.date.commonDescription) is selected!")
         selectedDay = dayView
     }
-   */
+   
     func presentedDateUpdated(date: CVDate) {
         if monthLabel.text != date.globalDescription && self.animationFinished {
             let updatedMonthLabel = UILabel()
@@ -198,49 +204,7 @@ extension MainUI: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
             self.view.insertSubview(updatedMonthLabel, aboveSubview: self.monthLabel)
         }
     }
- /*
-    func topMarker(shouldDisplayOnDayView dayView: CVCalendarDayView) -> Bool {
-        return true
-    }
-    
-    func dotMarker(shouldShowOnDayView dayView: CVCalendarDayView) -> Bool {
-        let day = dayView.date.day
-        let randomDay = Int(arc4random_uniform(31))
-        if day == randomDay {
-            return true
-        }
-        
-        return false
-    }
-    
-    func dotMarker(colorOnDayView dayView: CVCalendarDayView) -> [UIColor] {
-        
-        let red = CGFloat(arc4random_uniform(600) / 255)
-        let green = CGFloat(arc4random_uniform(600) / 255)
-        let blue = CGFloat(arc4random_uniform(600) / 255)
-        
-        let color = UIColor(red: red, green: green, blue: blue, alpha: 1)
-        
-        let numberOfDots = Int(arc4random_uniform(3) + 1)
-        switch(numberOfDots) {
-        case 2:
-            return [color, color]
-        case 3:
-            return [color, color, color]
-        default:
-            return [color] // return 1 dot
-        }
-    }
-    
-    func dotMarker(shouldMoveOnHighlightingOnDayView dayView: CVCalendarDayView) -> Bool {
-        return true
-    }
-    
-    func dotMarker(sizeOnDayView dayView: DayView) -> CGFloat {
-        return 13
-    }
-    
-    
+ 
     func weekdaySymbolType() -> WeekdaySymbolType {
         return .Short
     }
@@ -253,19 +217,6 @@ extension MainUI: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
         return false
     }
     
-    func preliminaryView(viewOnDayView dayView: DayView) -> UIView {
-        let circleView = CVAuxiliaryView(dayView: dayView, rect: dayView.bounds, shape: CVShape.Circle)
-        circleView.fillColor = .colorFromCode(0xCCCCCC)
-        return circleView
-    }
-    
-    func preliminaryView(shouldDisplayOnDayView dayView: DayView) -> Bool {
-        if (dayView.isCurrentDay) {
-            return true
-        }
-        return false
-    }
-    
     func supplementaryView(viewOnDayView dayView: DayView) -> UIView {
         let π = M_PI
         
@@ -274,7 +225,7 @@ extension MainUI: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
         let ringVerticalOffset: CGFloat = 1.0
         var ringLayer: CAShapeLayer!
         let ringLineWidth: CGFloat = 4.0
-        let ringLineColour: UIColor = .blueColor()
+        let ringLineColour: UIColor = .greenColor()
         
         let newView = UIView(frame: dayView.bounds)
         
@@ -310,7 +261,7 @@ extension MainUI: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
         
         return false
     }
- */
+ 
 }
 
 // MARK: - CVCalendarViewAppearanceDelegate
@@ -328,15 +279,6 @@ extension MainUI: CVCalendarViewAppearanceDelegate {
 // MARK: - IB Actions
 
 extension MainUI {
-    @IBAction func switchChanged(sender: UISwitch) {
-        if sender.on {
-            calendarView.changeDaysOutShowingState(false)
-            shouldShowDaysOut = true
-        } else {
-            calendarView.changeDaysOutShowingState(true)
-            shouldShowDaysOut = false
-        }
-    }
     
     @IBAction func todayMonthView() {
         calendarView.toggleCurrentDayView()

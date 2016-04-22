@@ -22,7 +22,7 @@ public final class CVAuxiliaryView: UIView {
         }
     }
 
-    public let defaultFillColor = UIColor.colorFromCode(0xe74c3c)
+    public let defaultFillColor = UIColor.colorFromCode(0x7CFC00)
 
     private var radius: CGFloat {
         get {
@@ -37,7 +37,7 @@ public final class CVAuxiliaryView: UIView {
         self.shape = shape
         super.init(frame: rect)
         strokeColor = UIColor.clearColor()
-        fillColor = UIColor.colorFromCode(0xe74c3c)
+        fillColor = UIColor.colorFromCode(0x7CFC00)
 
         layer.cornerRadius = 5
         backgroundColor = .clearColor()

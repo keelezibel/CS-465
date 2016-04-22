@@ -48,8 +48,6 @@
 		CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */; };
 		CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */; };
 		EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */; };
-		EFF92FA51CBB33FB006F0AC8 /* checked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */; };
-		EFF92FA61CBB33FB006F0AC8 /* unchecked_checkbox.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF92FA41CBB33FB006F0AC8 /* unchecked_checkbox.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,8 +95,6 @@
 		CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewOne.swift; sourceTree = "<group>"; };
 		CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewOne.swift; sourceTree = "<group>"; };
 		EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
-		EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked_checkbox.png; sourceTree = "<group>"; };
-		EFF92FA41CBB33FB006F0AC8 /* unchecked_checkbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unchecked_checkbox.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +134,6 @@
 				7E0CAAC21CA729B300251288 /* ViewController.swift */,
 				7E0CAAC41CA729B300251288 /* Main.storyboard */,
 				7ED4ED6F1CC0874C0004C7B3 /* Assets.xcassets */,
-				EFF92FA31CBB33FB006F0AC8 /* checked_checkbox.png */,
-				EFF92FA41CBB33FB006F0AC8 /* unchecked_checkbox.png */,
 				EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */,
 				7E0CAAC91CA729B300251288 /* LaunchScreen.storyboard */,
 				7E0CAACC1CA729B300251288 /* Info.plist */,
@@ -247,8 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFF92FA51CBB33FB006F0AC8 /* checked_checkbox.png in Resources */,
-				EFF92FA61CBB33FB006F0AC8 /* unchecked_checkbox.png in Resources */,
 				7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */,
 				7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */,
 				7ED4ED701CC0874C0004C7B3 /* Assets.xcassets in Resources */,

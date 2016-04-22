@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Chatroom-Bg-1.png",
+      "filename" : "checked_checkbox1.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Chatroom-Bg.png",
       "scale" : "2x"
     },
     {

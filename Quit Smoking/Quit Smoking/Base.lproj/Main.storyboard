@@ -17,64 +17,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7U4-Ll-vlc">
-                                <rect key="frame" x="70" y="338" width="235" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="DxY-2m-sIq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.84717558705858176" green="0.87083638956417508" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7U4-Ll-vlc">
+                                <rect key="frame" x="24" y="370" width="327" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="password"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="31"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TzK-mx-jsG">
-                                <rect key="frame" x="70" y="285" width="235" height="30"/>
-                                <accessibility key="accessibilityConfiguration" identifier="email"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quit Smoking App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AkY-fy-jmO">
-                                <rect key="frame" x="87" y="206" width="200" height="56"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZb-1U-3ZH">
-                                <rect key="frame" x="254" y="376" width="51" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0O3-mI-7IT">
+                                <rect key="frame" x="58" y="508" width="258" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Log-in"/>
+                                <connections>
+                                    <segue destination="pyq-xD-Fee" kind="show" id="N6S-NU-Tmn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZb-1U-3ZH">
+                                <rect key="frame" x="230" y="426" width="117" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8B-tU-m8m"/>
                                     <segue destination="IME-gc-bgQ" kind="modal" id="zG1-6I-K2w"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New User?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPN-Uk-AKG">
-                                <rect key="frame" x="70" y="441" width="84" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="remember me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuL-Gq-vBb">
-                                <rect key="frame" x="102" y="383" width="108" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgp-JW-lst" customClass="CheckBox" customModule="Quit_Smoking" customModuleProvider="target">
-                                <rect key="frame" x="70" y="383" width="24" height="22"/>
-                                <state key="normal" title="Button"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TzK-mx-jsG">
+                                <rect key="frame" x="25" y="297" width="335" height="47"/>
+                                <accessibility key="accessibilityConfiguration" identifier="email"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgp-JW-lst" customClass="CheckBox_Main" customModule="Quit_Smoking" customModuleProvider="target">
+                                <rect key="frame" x="25" y="430" width="28" height="27"/>
+                                <color key="tintColor" red="0.54310303403015181" green="0.55827138144794319" blue="0.64107493455497377" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="unchecked_checkbox">
+                                    <color key="titleColor" red="0.6588235294117647" green="0.6588235294117647" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0O3-mI-7IT">
-                                <rect key="frame" x="70" y="481" width="147" height="44"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Create an Account"/>
-                                <connections>
-                                    <segue destination="pyq-xD-Fee" kind="show" id="N6S-NU-Tmn"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Max" translatesAutoresizingMaskIntoConstraints="NO" id="qRI-cB-GLd">
-                                <rect key="frame" x="57" y="78" width="260" height="128"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="hVS-76-wNZ"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="userNameLogin" destination="TzK-mx-jsG" id="8rP-vH-n5p"/>
@@ -88,7 +73,7 @@
         <!--Entry Screen-->
         <scene sceneID="q5p-Zb-8mv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bb7-Rn-cSk" userLabel="Entry Screen" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Bb7-Rn-cSk" userLabel="Entry Screen" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mzZ-7n-MgK">
@@ -206,18 +191,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How much do you smoke per day?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dr-Tv-knW">
-                                <rect key="frame" x="24" y="426" width="267" height="28"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sticks per day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaG-t0-fyw">
-                                <rect key="frame" x="203" y="471" width="106" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEG-7i-Xuf" customClass="CheckBox" customModule="Quit_Smoking" customModuleProvider="target">
                                 <rect key="frame" x="131" y="324" width="24" height="22"/>
                                 <state key="normal" title="Button"/>
@@ -226,14 +199,8 @@
                                 <rect key="frame" x="244" y="324" width="24" height="22"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBs-SC-ygb">
-                                <rect key="frame" x="24" y="419" width="171" height="126"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="pyq-xD-Fee" id="7NW-d3-sMu"/>
-                                </connections>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiZ-Nb-NNk">
-                                <rect key="frame" x="156" y="534" width="201" height="58"/>
+                                <rect key="frame" x="156" y="543" width="201" height="58"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Continue"/>
@@ -242,12 +209,23 @@
                                     <segue destination="zyx-bQ-AGV" kind="show" id="OeQ-up-mS5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#Packs per week" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dr-Tv-knW">
+                                <rect key="frame" x="40" y="423" width="151" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBs-SC-ygb">
+                                <rect key="frame" x="20" y="428" width="171" height="126"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="pyq-xD-Fee" id="7NW-d3-sMu"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Profile" id="nr9-W3-iqd" userLabel="Profile"/>
-                    <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -300,7 +278,6 @@
                     <connections>
                         <segue destination="Hfv-Ui-9Nf" kind="relationship" relationship="viewControllers" id="Vig-1Z-QNS"/>
                         <segue destination="DSo-a7-WE6" kind="relationship" relationship="viewControllers" id="sBr-jw-Xkf"/>
-                        <segue destination="11e-eR-3bv" kind="relationship" relationship="viewControllers" id="Qmw-W1-X0F"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FhW-i5-MIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -424,9 +401,6 @@
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uOo-Zd-ueP">
                                 <rect key="frame" x="306" y="535" width="51" height="31"/>
-                                <connections>
-                                    <action selector="switchChanged:" destination="o7E-4R-Ag9" eventType="valueChanged" id="fq0-9y-EhY"/>
-                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG0-bL-X00">
                                 <rect key="frame" x="198" y="460" width="32" height="30"/>
@@ -460,13 +434,6 @@
                                     <outlet property="menuViewDelegate" destination="o7E-4R-Ag9" id="Vv8-Q3-XP8"/>
                                 </connections>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wT5-Ay-yAd">
-                                <rect key="frame" x="306" y="460" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="refreshMonth:" destination="o7E-4R-Ag9" eventType="touchUpInside" id="5Za-RL-ywI"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="January, 2015" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3j-jJ-8uX">
                                 <rect key="frame" x="114" y="77" width="147" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -504,7 +471,7 @@
                                 <rect key="frame" x="14" y="460" width="55" height="30"/>
                                 <state key="normal" title="Remove"/>
                                 <connections>
-                                    <action selector="removeCircleAndDot:" destination="o7E-4R-Ag9" eventType="touchUpInside" id="A9p-9y-3es"/>
+                                    <action selector="addCircleAndDot:" destination="o7E-4R-Ag9" eventType="touchUpInside" id="vyS-Kk-x35"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -603,7 +570,6 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Buddy System" id="83y-Ca-dHf"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -711,7 +677,6 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Quit for money" id="Se7-34-7wO"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -779,45 +744,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kao-WF-oju" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1909.5" y="2089.5"/>
-        </scene>
-        <!--Games Controller-->
-        <scene sceneID="rmd-Nc-hXV">
-            <objects>
-                <navigationController title="Games Controller" id="11e-eR-3bv" userLabel="Games Controller" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Games" image="icon-game" id="aoJ-Es-gYw"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jeR-rC-POJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="uAz-ym-k1K" kind="relationship" relationship="rootViewController" id="IXD-Ld-BDG"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wc0-VY-Y9U" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="101.5" y="3165.5"/>
-        </scene>
-        <!--Games-->
-        <scene sceneID="I4s-bQ-3Kg">
-            <objects>
-                <viewController title="Games" id="uAz-ym-k1K" userLabel="Games" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="RXU-Yh-h3b"/>
-                        <viewControllerLayoutGuide type="bottom" id="PrN-IV-8Hi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="E2Y-De-onm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="s56-3X-jJo"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="568-wD-g8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="272.5" y="4027.5"/>
         </scene>
         <!--Product_Info-->
         <scene sceneID="TAF-JU-Ii4">
@@ -1186,18 +1112,18 @@ Yerim Park</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Max" width="415" height="210"/>
         <image name="Twitter-icon" width="256" height="256"/>
         <image name="adam" width="633" height="633"/>
         <image name="ben" width="400" height="400"/>
         <image name="gmail" width="500" height="500"/>
         <image name="icon-56317" width="128" height="128"/>
         <image name="icon-chat-active" width="29" height="29"/>
-        <image name="icon-game" width="29" height="29"/>
         <image name="icon-home" width="29" height="29"/>
+        <image name="main" width="750" height="1334"/>
         <image name="max" width="306" height="306"/>
         <image name="social_facebook_box_blue" width="512" height="512"/>
         <image name="textfield_background" width="321" height="49"/>
+        <image name="unchecked_checkbox" width="64" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="HXy-0I-WBb"/>
