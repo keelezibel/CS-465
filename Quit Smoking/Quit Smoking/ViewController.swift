@@ -255,8 +255,14 @@ extension MainUI: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
     }
     
     func supplementaryView(shouldDisplayOnDayView dayView: DayView) -> Bool {
-        if (Int(arc4random_uniform(3)) == 1) {
-            return true
+        let month = 4
+        let day = 1...24
+        if let date = dayView.date {
+            if( day.contains(date.day) && date.month == month) {
+                return true
+            }
+        } else {
+            // date is nil :(
         }
         
         return false
