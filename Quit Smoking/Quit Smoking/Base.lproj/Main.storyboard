@@ -234,6 +234,7 @@
                         <outlet property="userFnameReg" destination="3oa-iO-QD3" id="10b-Ck-Faf"/>
                         <outlet property="userLnameReg" destination="EUA-Ab-IZe" id="0ar-TD-XAo"/>
                         <outlet property="userNameRegister" destination="ZeO-Lw-5ea" id="HoI-0V-pdI"/>
+                        <outlet property="userPasswordConfirm" destination="gzb-g8-QcQ" id="hnY-xM-GYn"/>
                         <outlet property="userPasswordRegister" destination="MZH-tS-ohp" id="YU8-pw-YdB"/>
                     </connections>
                 </viewController>
