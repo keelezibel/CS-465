@@ -64,13 +64,6 @@ class RegisterViewOne: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
             
             self.presentViewController(alertController, animated: true, completion: nil)
             
-        }else if(userPasswordRegister.text != userPasswordConfirm.text){
-            
-            let alertController = UIAlertController(title: "Error", message:
-                "password is not the same", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
         }else if(userFnameReg.text == ""){
             let alertController = UIAlertController(title: "Error", message:
                 "please fill in your first name", preferredStyle: UIAlertControllerStyle.Alert)
@@ -83,7 +76,7 @@ class RegisterViewOne: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
             alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
             
             self.presentViewController(alertController, animated: true, completion: nil)
-        
+            
         }else if(userAgeReg.text == ""){
             
             let alertController = UIAlertController(title: "Error", message:
@@ -91,7 +84,14 @@ class RegisterViewOne: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
             alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
             
             self.presentViewController(alertController, animated: true, completion: nil)
-    
+            
+        }else if(userPasswordRegister.text != userPasswordConfirm.text){
+            
+            let alertController = UIAlertController(title: "Error", message:
+                "password is not the same", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
         }else{
         
         
