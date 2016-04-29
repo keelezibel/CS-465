@@ -314,7 +314,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="textfield_background" translatesAutoresizingMaskIntoConstraints="NO" id="mfs-QZ-6rI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="chat_bar_big" translatesAutoresizingMaskIntoConstraints="NO" id="mfs-QZ-6rI">
                                 <rect key="frame" x="0.0" y="569" width="375" height="49"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eFl-cS-iq8">
@@ -1127,14 +1127,9 @@ Yerim Park</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="textfield_background" translatesAutoresizingMaskIntoConstraints="NO" id="LuB-tP-ON0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="chat_bar_big" translatesAutoresizingMaskIntoConstraints="NO" id="LuB-tP-ON0">
                                 <rect key="frame" x="0.0" y="569" width="375" height="49"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XAd-ra-MU4">
-                                <rect key="frame" x="20" y="580" width="291" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACq-2S-NRE">
                                 <rect key="frame" x="319" y="580" width="36" height="30"/>
                                 <state key="normal" title="Send"/>
@@ -1194,6 +1189,11 @@ Yerim Park</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="adam" translatesAutoresizingMaskIntoConstraints="NO" id="fzC-d4-m1b">
                                 <rect key="frame" x="20" y="443" width="57" height="47"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" background="chat_bar_small" translatesAutoresizingMaskIntoConstraints="NO" id="XAd-ra-MU4">
+                                <rect key="frame" x="20" y="580" width="291" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -1214,6 +1214,8 @@ Yerim Park</string>
         <image name="Twitter-icon" width="256" height="256"/>
         <image name="adam" width="633" height="633"/>
         <image name="ben" width="400" height="400"/>
+        <image name="chat_bar_big" width="321" height="49"/>
+        <image name="chat_bar_small" width="750" height="1334"/>
         <image name="gmail" width="500" height="500"/>
         <image name="icon-56317" width="128" height="128"/>
         <image name="icon-chat-active" width="29" height="29"/>
@@ -1222,7 +1224,6 @@ Yerim Park</string>
         <image name="main_background" width="750" height="608"/>
         <image name="max" width="306" height="306"/>
         <image name="social_facebook_box_blue" width="512" height="512"/>
-        <image name="textfield_background" width="321" height="49"/>
         <image name="unchecked_checkbox" width="64" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
