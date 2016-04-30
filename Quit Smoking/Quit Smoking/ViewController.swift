@@ -8,6 +8,8 @@
 
 import UIKit
 import EventKit
+import QuartzCore
+var flag = 0
 
 var accounts:[String:String] = [:]
 class ViewController: ResponsiveTextFieldViewController{
@@ -71,6 +73,31 @@ class MainUI:UIViewController{
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var daysOutSwitch: UISwitch!
     
+    // START OF TIMER CODE
+    var seconds = 0
+    var count = 0
+    var timer = NSTimer()
+    func starttimer()  {
+        seconds = 5
+        count = 0
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("subtractTime"), userInfo: nil, repeats: true)
+    }
+    func subtractTime() {
+        seconds -= 1
+        if(seconds == 0 && flag == 0)  {
+            timer.invalidate()
+            flag = 1
+            let alert = UIAlertController(title: "Did you smoke today?",
+                                          message: "Don't smoke!",
+                                          preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: {
+                action in self.starttimer()
+            }))
+            presentViewController(alert, animated: true, completion:nil)
+        }
+    }
+    // END OF TIMER CODE
+    
     var shouldShowDaysOut = true
     var animationFinished = true
     var selectedDay:DayView!
@@ -78,6 +105,8 @@ class MainUI:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         monthLabel.text = CVDate(date: NSDate()).globalDescription
+        
+        starttimer()
         
         let nav_bar_header = "Settings"
         let items = ["Modify Profile", "Badges", "Change Quit 4 Money Plan", "Product Info"]
@@ -121,15 +150,6 @@ class MainUI:UIViewController{
         shouldShowDaysOut = true
     }
     
-    @IBAction func addCircleAndDot(sender: AnyObject){
-       // if let dayView = selectedDay {
-            //calendarView.contentController.removeCircleLabel(dayView)
-            //calendarView.contentController.removeDotViews(dayView)
-            //supplementaryView(viewOnDayView: selectedDay)
-        //}
-    }
-
-
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
