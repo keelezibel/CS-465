@@ -206,7 +206,7 @@
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="Lpj-1F-uFn"/>
-                                    <segue destination="zyx-bQ-AGV" kind="show" id="OeQ-up-mS5"/>
+                                    <segue destination="rsa-Ku-oRI" kind="show" id="wf1-3u-VvV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#Packs per week" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dr-Tv-knW">
@@ -520,30 +520,10 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIT-RS-I0y">
-                                <rect key="frame" x="28" y="169" width="319" height="160"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Buddy System is a special function of our app, If you choose this function you will be paired with a buddy by our app. The benefit of choosing buddy system is that you can talk to people who have similar experience with you and get encouraged when trying to quit smoking</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="buddy system" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nf8-84-Lcp">
-                                <rect key="frame" x="113" y="100" width="148" height="38"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUA-eA-orM" customClass="CheckBox" customModule="Quit_Smoking" customModuleProvider="target">
-                                <rect key="frame" x="28" y="366" width="31" height="28"/>
+                                <rect key="frame" x="29" y="404" width="31" height="28"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yes, I want to use buddy system function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBy-rf-AVQ">
-                                <rect key="frame" x="75" y="366" width="280" height="25"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAq-Iz-yFm">
                                 <rect key="frame" x="36" y="432" width="43" height="46"/>
                                 <state key="normal" title="Button" image="social_facebook_box_blue"/>
@@ -571,6 +551,12 @@
                                     <segue destination="ujv-8G-uja" kind="show" id="vRy-mG-OV9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yes, I want to use buddy system function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBy-rf-AVQ">
+                                <rect key="frame" x="68" y="404" width="280" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1218,11 +1204,89 @@ Yerim Park</string>
             </objects>
             <point key="canvasLocation" x="1519.5" y="2768.5"/>
         </scene>
+        <!--Buddy System1-->
+        <scene sceneID="tgy-30-ggD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYJ-eK-x2F" sceneMemberID="firstResponder"/>
+                <viewController id="rsa-Ku-oRI" userLabel="Buddy System1" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dbg-V5-Lyp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ibr-SX-Irl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZKY-5J-WcE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buddy_1" translatesAutoresizingMaskIntoConstraints="NO" id="vFJ-m7-TDt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elK-OQ-ZTl">
+                                <rect key="frame" x="154" y="589" width="201" height="58"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="aqm-ZZ-2wm"/>
+                                    <segue destination="c20-3Q-FB1" kind="show" id="jki-C2-1Iz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Buddy System" id="fbd-h6-UKo"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1842.5" y="-172.5"/>
+        </scene>
+        <!--Buddy System1-->
+        <scene sceneID="b9C-NC-4Vj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mW6-1g-ErF" sceneMemberID="firstResponder"/>
+                <viewController id="c20-3Q-FB1" userLabel="Buddy System1" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ej-2o-eVP"/>
+                        <viewControllerLayoutGuide type="bottom" id="awy-GB-RTQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sce-EO-wXX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buddy_2" translatesAutoresizingMaskIntoConstraints="NO" id="l61-MQ-Lmg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLO-b1-hqZ">
+                                <rect key="frame" x="154" y="589" width="201" height="58"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="1OO-0k-L4H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Buddy System" id="RRD-NO-8l1"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <segue destination="zyx-bQ-AGV" kind="show" id="CJr-ue-Cnf"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1842.5" y="566.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Twitter-icon" width="256" height="256"/>
         <image name="adam" width="633" height="633"/>
         <image name="ben" width="400" height="400"/>
+        <image name="buddy_1" width="750" height="1334"/>
+        <image name="buddy_2" width="750" height="1334"/>
         <image name="chat_bar_big" width="321" height="49"/>
         <image name="chat_bar_small" width="750" height="1334"/>
         <image name="emergency" width="750" height="123"/>
