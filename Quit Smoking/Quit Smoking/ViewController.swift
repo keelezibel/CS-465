@@ -73,6 +73,7 @@ class MainUI:UIViewController{
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var daysOutSwitch: UISwitch!
     
+    @IBOutlet weak var progressBar: UIProgressView!
     // START OF TIMER CODE
     var seconds = 0
     var count = 0
@@ -148,6 +149,28 @@ class MainUI:UIViewController{
         self.navigationItem.titleView = menuView
         calendarView.changeDaysOutShowingState(true)
         shouldShowDaysOut = true
+        
+        /////////////////////////////////////progress bar/////////////////////
+        
+        //get start time
+        let LogFileTime = FileUtils(fileName: "TimeLog.csv")
+        let start_time = LogFileTime.readFile()
+        
+        //get current time
+        let currentDate = NSDate()
+        print(currentDate)
+        let calendar = NSCalendar.currentCalendar()
+        print(calendar)
+        let dateComponents = calendar.components(NSCalendarUnit.Second, fromDate: currentDate)
+        let currentTime = dateComponents.second //this is my current time in seconds
+        
+        //get the progress time
+        print(start_time)
+        print(currentTime)
+        let progressTime = 1.0/(Float(start_time)! - Float(currentTime))
+        print(progressTime)
+        progressBar.setProgress(progressTime, animated: false)
+        
     }
     
     override func viewDidLayoutSubviews() {

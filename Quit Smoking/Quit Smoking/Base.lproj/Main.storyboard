@@ -480,6 +480,15 @@
                                     <segue destination="Utt-FG-l87" kind="show" id="0Qz-4m-vVe"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FDh-Y3-8YS">
+                                <rect key="frame" x="20" y="132" width="335" height="2"/>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="end_bar" translatesAutoresizingMaskIntoConstraints="NO" id="Hr7-r8-HIJ">
+                                <rect key="frame" x="329" y="98" width="31" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="jeD-Xi-ZBs">
+                                <rect key="frame" x="20" y="98" width="29" height="30"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -490,11 +499,12 @@
                         <outlet property="daysOutSwitch" destination="uOo-Zd-ueP" id="fNT-g7-MMD"/>
                         <outlet property="menuCalView" destination="8sM-Xt-s8O" id="inV-6X-Vk6"/>
                         <outlet property="monthLabel" destination="q3j-jJ-8uX" id="liV-D1-2VC"/>
+                        <outlet property="progressBar" destination="FDh-Y3-8YS" id="ESJ-qD-ZTr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3AX-h8-1mV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409.5" y="1928.5"/>
+            <point key="canvasLocation" x="1330.5" y="1912.5"/>
         </scene>
         <!--Buddy System-->
         <scene sceneID="Uwh-VS-F8I">
@@ -1297,12 +1307,14 @@ Yerim Park</string>
     <resources>
         <image name="Twitter-icon" width="256" height="256"/>
         <image name="adam" width="633" height="633"/>
+        <image name="avatar" width="90" height="159"/>
         <image name="ben" width="400" height="400"/>
         <image name="buddy_1" width="750" height="1334"/>
         <image name="buddy_2" width="750" height="1334"/>
         <image name="chat_bar_big" width="321" height="49"/>
         <image name="chat_bar_small" width="750" height="1334"/>
         <image name="emergency" width="750" height="123"/>
+        <image name="end_bar" width="168" height="153"/>
         <image name="gmail" width="500" height="500"/>
         <image name="icon-56317" width="128" height="128"/>
         <image name="icon-chat-active" width="29" height="29"/>

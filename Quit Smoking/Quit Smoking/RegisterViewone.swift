@@ -122,7 +122,19 @@ class RegisterViewOne: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
         print( retVal2 ?  "File Saved":
             "File Error")
         }
+        let logFileTime = FileUtils(fileName: "TimeLog.csv")
+        //save first log-in time
+        let currentDate = NSDate()
+        let calendar = NSCalendar.currentCalendar()
+        let dateComponents = calendar.components(NSCalendarUnit.Second, fromDate: currentDate)
+        let currentTime = dateComponents.second
+        let logEntryTime = String(currentTime)
+        let retval3 = logFileTime.appendFile(logEntryTime)
+        //print(logFileTime.readFile())
+        
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
