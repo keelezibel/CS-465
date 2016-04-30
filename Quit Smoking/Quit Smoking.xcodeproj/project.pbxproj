@@ -13,7 +13,6 @@
 		7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC91CA729B300251288 /* LaunchScreen.storyboard */; };
 		7E36B2071CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7E36B2061CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle */; };
 		7E36B2091CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */; };
-		7EBDEFA81CD4F6570031BD28 /* twittericon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDEFA71CD4F6570031BD28 /* twittericon2.png */; };
 		7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */; };
 		7EC76F771CC1DB1D002E4DB3 /* CVAuxiliaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC76F5B1CC1DB1D002E4DB3 /* CVAuxiliaryView.swift */; };
 		7EC76F781CC1DB1D002E4DB3 /* CVCalendarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC76F5D1CC1DB1D002E4DB3 /* CVCalendarContentViewController.swift */; };
@@ -62,7 +61,6 @@
 		7E0CAACC1CA729B300251288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E36B2061CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
 		7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
-		7EBDEFA71CD4F6570031BD28 /* twittericon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twittericon2.png; path = ../../../../../../../../Downloads/twittericon2.png; sourceTree = "<group>"; };
 		7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
 		7EC76F5B1CC1DB1D002E4DB3 /* CVAuxiliaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CVAuxiliaryView.swift; path = CVCalendar/CVAuxiliaryView.swift; sourceTree = "<group>"; };
 		7EC76F5C1CC1DB1D002E4DB3 /* CVCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVCalendar.h; path = CVCalendar/CVCalendar.h; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 		7E0CAABF1CA729B300251288 /* Quit Smoking */ = {
 			isa = PBXGroup;
 			children = (
-				7EBDEFA71CD4F6570031BD28 /* twittericon2.png */,
 				7EC76F5A1CC1DAD1002E4DB3 /* CVCalender */,
 				7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */,
 				7E36B2061CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle */,
@@ -250,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EBDEFA81CD4F6570031BD28 /* twittericon2.png in Resources */,
 				7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */,
 				7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */,
 				7ED4ED701CC0874C0004C7B3 /* Assets.xcassets in Resources */,

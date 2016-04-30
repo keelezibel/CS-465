@@ -1262,7 +1262,7 @@ Yerim Park</string>
         <!--q4m2_main-->
         <scene sceneID="VcY-KP-siW">
             <objects>
-                <viewController storyboardIdentifier="Q4M_2" title="Q4M_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tvh-bN-N0h" userLabel="q4m2_main" customClass="QuitfMoneyReg" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q4M_2" title="Q4M_2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tvh-bN-N0h" userLabel="q4m2_main" customClass="QuitfMoneySave" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hwM-AS-HiV"/>
                         <viewControllerLayoutGuide type="bottom" id="HXD-2K-LAc"/>
@@ -1318,7 +1318,6 @@ Yerim Park</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <action selector="SaveQuit:" destination="tvh-bN-N0h" eventType="touchUpInside" id="Bro-XS-RN8"/>
                                     <action selector="savebutton:" destination="tvh-bN-N0h" eventType="touchUpInside" id="IQn-I0-8yx"/>
                                 </connections>
                             </button>
@@ -1333,7 +1332,6 @@ Yerim Park</string>
                         <outlet property="CardExp" destination="3uH-Ws-BNf" id="MRp-wF-okP"/>
                         <outlet property="CardFname" destination="M3D-cz-oZA" id="5l7-Eb-fV7"/>
                         <outlet property="CardLname" destination="jAB-5L-sbA" id="iOO-bO-vd3"/>
-                        <outlet property="CardNum" destination="Hk1-ce-gPR" id="WIc-MI-MT7"/>
                         <outlet property="CardNumSave" destination="Hk1-ce-gPR" id="6X5-3m-z2N"/>
                     </connections>
                 </viewController>
