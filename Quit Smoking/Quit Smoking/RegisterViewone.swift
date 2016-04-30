@@ -10,17 +10,6 @@
 import UIKit
 class RegisterViewOne: ResponsiveTextFieldViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     
-    @IBAction func loginButton(sender: AnyObject) {
-        if(accounts[userNameLogin.text!] != userPasswordLogin.text!){
-            let alertController = UIAlertController(title: "Error", message:
-                "Your username and password don't match!", preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
-        }
-    }
-    @IBOutlet var userPasswordLogin: UITextField!
-    @IBOutlet var userNameLogin: UITextField!
     @IBOutlet var userNameRegister: UITextField!
     @IBOutlet var userPasswordRegister: UITextField!
     
