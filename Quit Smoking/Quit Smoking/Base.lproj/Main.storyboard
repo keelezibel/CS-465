@@ -8,7 +8,7 @@
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -586,7 +586,7 @@
         <!--Q4M-->
         <scene sceneID="9q7-jf-cbD">
             <objects>
-                <viewController storyboardIdentifier="Q4M" title="Q4M" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ujv-8G-uja" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q4M" title="Q4M" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ujv-8G-uja" customClass="QuitfMoneyReg" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fr8-0S-30U"/>
                         <viewControllerLayoutGuide type="bottom" id="n0U-VT-WaS"/>
@@ -675,6 +675,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Finish"/>
                                 <connections>
+                                    <action selector="SaveQuit:" destination="ujv-8G-uja" eventType="touchUpInside" id="w3H-ke-Y7g"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="JkD-31-gUm"/>
                                 </connections>
                             </button>
@@ -685,6 +686,12 @@
                     <navigationItem key="navigationItem" title="Quit for money" id="Se7-34-7wO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="CardExp" destination="wQp-0A-7DZ" id="Qbv-iW-9dI"/>
+                        <outlet property="CardFname" destination="Uqm-YX-RRg" id="fVG-xo-7tf"/>
+                        <outlet property="CardLname" destination="QdY-x4-jaX" id="WHh-HE-VJS"/>
+                        <outlet property="CardNum" destination="GsH-4N-mnN" id="Y2A-z0-4Sz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Rp-CK-S4f" sceneMemberID="firstResponder"/>
             </objects>
@@ -1229,6 +1236,6 @@ Yerim Park</string>
         <image name="unchecked_checkbox" width="64" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HXy-0I-WBb"/>
+        <segue reference="JkD-31-gUm"/>
     </inferredMetricsTieBreakers>
 </document>
