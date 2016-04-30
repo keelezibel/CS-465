@@ -957,7 +957,7 @@ Yerim Park</string>
         <!--Q4M_main-->
         <scene sceneID="a8H-gc-m8Z">
             <objects>
-                <viewController storyboardIdentifier="Q4M_main" title="Q4M_main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eMT-Ag-LGG" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Q4M_main" title="Q4M_main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eMT-Ag-LGG" customClass="QuitfMoneySave" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pjR-8N-a8R"/>
                         <viewControllerLayoutGuide type="bottom" id="OZ5-xQ-cYm"/>
@@ -1040,6 +1040,15 @@ Yerim Park</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAy-Zi-Gvn">
+                                <rect key="frame" x="262" y="587" width="78" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savebutton:" destination="eMT-Ag-LGG" eventType="touchUpInside" id="t5k-df-upf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1048,6 +1057,12 @@ Yerim Park</string>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="CardExp" destination="pdJ-xT-fT2" id="0Aq-xG-c0L"/>
+                        <outlet property="CardFname" destination="hDv-01-Nku" id="iHt-59-6dV"/>
+                        <outlet property="CardLname" destination="P85-g0-BYN" id="vBH-pP-VHu"/>
+                        <outlet property="CardNumSave" destination="gIc-ur-I3i" id="Wam-sJ-bfz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1VT-lZ-9O8" sceneMemberID="firstResponder"/>
             </objects>
