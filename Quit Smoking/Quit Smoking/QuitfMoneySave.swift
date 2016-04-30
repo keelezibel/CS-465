@@ -25,6 +25,7 @@ class QuitfMoneySave: ResponsiveTextFieldViewController{
         
         
         let ProfileFile=FileUtils(fileName: "Quit4MoneyLog.csv")
+        if(ProfileFile.fileExists()){
         let returnval = ProfileFile.readFile()
         let returnvalArr = returnval.characters.split{$0 == ","}.map(String.init)
         print(returnvalArr[0])
@@ -36,6 +37,7 @@ class QuitfMoneySave: ResponsiveTextFieldViewController{
         CardFname.text = returnvalArr[1]
         CardLname.text = returnvalArr[2]
         CardExp.text = newStringreturnval
+        }
     }
     
     @IBAction func savebutton(sender: AnyObject) {
