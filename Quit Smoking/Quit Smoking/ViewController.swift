@@ -255,7 +255,20 @@ extension MainUI: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
         let rect = CGRectMake(newView.frame.midX-radius, newView.frame.midY-radius-ringVerticalOffset, diameter, diameter)
         
         ringLayer = CAShapeLayer()
+        
+        // START OF CODE FOR PUTTING COIN AT THE CORNER
+        let imageSubLayer = CALayer()
+        let image = UIImage(named: "coin_gold")
+        let height = (image?.size.height)!/10 ?? 0
+        let width = (image?.size.width)!/10 ?? 0
+        let startFrame = CGRectMake(0, 0, width, height)
+        imageSubLayer.frame = startFrame
+        imageSubLayer.contentsScale = newView.contentScaleFactor
+        imageSubLayer.contents = image?.CGImage
+        // END OF CODE FOR PUTTING COIN AT THE CORNER
+        
         newView.layer.addSublayer(ringLayer)
+        newView.layer.addSublayer(imageSubLayer)
         
         ringLayer.fillColor = nil
         ringLayer.lineWidth = ringLineWidth
