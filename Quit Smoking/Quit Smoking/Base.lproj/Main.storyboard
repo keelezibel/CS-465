@@ -1572,6 +1572,9 @@ Yerim Park</string>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVe-sA-SUH">
                                 <rect key="frame" x="200" y="485" width="155" height="68"/>
+                                <connections>
+                                    <segue destination="gPx-Zw-qee" kind="show" id="xBk-fQ-IsM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1730,6 +1733,7 @@ Yerim Park</string>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="GZG-mq-Bh6"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="s6m-6I-p2d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1832,6 +1836,7 @@ Yerim Park</string>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="eHH-44-3U4"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="oaF-Pt-4A8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1934,6 +1939,7 @@ Yerim Park</string>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="goB-Yu-FJ0"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="JZL-cJ-3b7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2172,6 +2178,46 @@ Yerim Park</string>
             </objects>
             <point key="canvasLocation" x="3753.5" y="1782.5"/>
         </scene>
+        <!--q4m1_main-->
+        <scene sceneID="OcV-Tx-2sM">
+            <objects>
+                <viewController storyboardIdentifier="buddy_main_disable" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gPx-Zw-qee" userLabel="q4m1_main" customClass="BadgeViewTwo" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BdU-DD-mKB"/>
+                        <viewControllerLayoutGuide type="bottom" id="cro-Fo-e6q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3af-L6-6jW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buddysystembackground" translatesAutoresizingMaskIntoConstraints="NO" id="pxf-FY-wXb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buddy system is disabled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0M7-PB-I1V">
+                                <rect key="frame" x="12" y="271" width="350" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98e-3d-sNj">
+                                <rect key="frame" x="154" y="511" width="201" height="58"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Ok"/>
+                                <connections>
+                                    <action selector="savebutton:" destination="tvh-bN-N0h" eventType="touchUpInside" id="PmV-QF-ZOb"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="ZOS-nu-C2x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wR9-h1-UpK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3294.5" y="4013.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="adam" width="633" height="633"/>
@@ -2208,6 +2254,6 @@ Yerim Park</string>
     <inferredMetricsTieBreakers>
         <segue reference="XkL-py-ia2"/>
         <segue reference="Zq5-Vf-lZ0"/>
-        <segue reference="ATY-GW-jfC"/>
+        <segue reference="ZOS-nu-C2x"/>
     </inferredMetricsTieBreakers>
 </document>
