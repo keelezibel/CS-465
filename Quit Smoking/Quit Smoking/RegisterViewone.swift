@@ -24,6 +24,7 @@ class RegisterViewOne: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
     @IBOutlet var userNameRegister: UITextField!
     @IBOutlet var userPasswordRegister: UITextField!
     
+    @IBOutlet weak var userPasswordConfirm: UITextField!
     @IBOutlet weak var userFnameReg: UITextField!
     
     @IBOutlet weak var userLnameReg: UITextField!
@@ -47,6 +48,53 @@ class RegisterViewOne: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
         accounts[userNameRegister.text!] = userPasswordRegister.text!
         //print(userNameRegister)
         //print(userPasswordRegister)
+        
+        
+        if(userNameRegister.text == ""){
+            let alertController = UIAlertController(title: "Error", message:
+                "please create an username", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+        }else if(userPasswordRegister.text == ""){
+            let alertController = UIAlertController(title: "Error", message:
+                "please create a password", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+        }else if(userFnameReg.text == ""){
+            let alertController = UIAlertController(title: "Error", message:
+                "please fill in your first name", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }else if(userLnameReg.text == ""){
+            let alertController = UIAlertController(title: "Error", message:
+                "please fill in your last name", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+        }else if(userAgeReg.text == ""){
+            
+            let alertController = UIAlertController(title: "Error", message:
+                "please fill in your age", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+        }else if(userPasswordRegister.text != userPasswordConfirm.text){
+            
+            let alertController = UIAlertController(title: "Error", message:
+                "password is not the same", preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+        }else{
+        
+        
         
         
         let logFileProfile = FileUtils(fileName: "ProfileLog.csv")
@@ -73,6 +121,7 @@ class RegisterViewOne: ResponsiveTextFieldViewController, UIPickerViewDelegate, 
         
         print( retVal2 ?  "File Saved":
             "File Error")
+        }
     }
     
     override func didReceiveMemoryWarning() {
