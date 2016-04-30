@@ -47,6 +47,7 @@
 		CF56C7681CC1D43D00CDA8BC /* BadgeViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7671CC1D43D00CDA8BC /* BadgeViewTwo.swift */; };
 		CF56C7721CD43EDF00CDA8BC /* QuitfMoneyReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7711CD43EDF00CDA8BC /* QuitfMoneyReg.swift */; };
 		CF56C7741CD43EE300CDA8BC /* QuitfMoneySave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7731CD43EE300CDA8BC /* QuitfMoneySave.swift */; };
+		CF56C7821CD516F900CDA8BC /* QuitfMoneyDisable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7811CD516F900CDA8BC /* QuitfMoneyDisable.swift */; };
 		CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */; };
 		CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */; };
 		EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */; };
@@ -96,6 +97,7 @@
 		CF56C7671CC1D43D00CDA8BC /* BadgeViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewTwo.swift; sourceTree = "<group>"; };
 		CF56C7711CD43EDF00CDA8BC /* QuitfMoneyReg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitfMoneyReg.swift; sourceTree = "<group>"; };
 		CF56C7731CD43EE300CDA8BC /* QuitfMoneySave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitfMoneySave.swift; sourceTree = "<group>"; };
+		CF56C7811CD516F900CDA8BC /* QuitfMoneyDisable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitfMoneyDisable.swift; sourceTree = "<group>"; };
 		CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewOne.swift; sourceTree = "<group>"; };
 		CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewOne.swift; sourceTree = "<group>"; };
 		EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				CF56C7731CD43EE300CDA8BC /* QuitfMoneySave.swift */,
 				CF56C7651CC1CF6000CDA8BC /* RegisterSaveOne.swift */,
 				CF56C7671CC1D43D00CDA8BC /* BadgeViewTwo.swift */,
+				CF56C7811CD516F900CDA8BC /* QuitfMoneyDisable.swift */,
 			);
 			path = "Quit Smoking";
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				7EC76F911CC1DB1D002E4DB3 /* CVWeekdaySymbolType.swift in Sources */,
 				7EC76F8E1CC1DB1D002E4DB3 /* CVSelectionType.swift in Sources */,
 				7E36B2091CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift in Sources */,
+				CF56C7821CD516F900CDA8BC /* QuitfMoneyDisable.swift in Sources */,
 				7EC76F841CC1DB1D002E4DB3 /* CVCalendarViewAppearance.swift in Sources */,
 				CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */,
 				7EC76F901CC1DB1D002E4DB3 /* CVShape.swift in Sources */,
