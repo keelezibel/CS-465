@@ -50,6 +50,9 @@
 		CF56C7761CD4585000CDA8BC /* quit4moneybackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C7751CD4585000CDA8BC /* quit4moneybackground.jpeg */; };
 		CF56C7781CD4601B00CDA8BC /* buddysystembackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C7771CD4601B00CDA8BC /* buddysystembackground.jpeg */; };
 		CF56C77A1CD4627A00CDA8BC /* facebookicon2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C7791CD4627A00CDA8BC /* facebookicon2.jpeg */; };
+		CF56C77C1CD465CD00CDA8BC /* buddysystembackground2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C77B1CD465CD00CDA8BC /* buddysystembackground2.jpeg */; };
+		CF56C77E1CD465EF00CDA8BC /* gmailicon2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C77D1CD465EF00CDA8BC /* gmailicon2.jpeg */; };
+		CF56C7801CD4660800CDA8BC /* twittericon2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C77F1CD4660800CDA8BC /* twittericon2.jpeg */; };
 		CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */; };
 		CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */; };
 		EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */; };
@@ -102,6 +105,9 @@
 		CF56C7751CD4585000CDA8BC /* quit4moneybackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quit4moneybackground.jpeg; sourceTree = "<group>"; };
 		CF56C7771CD4601B00CDA8BC /* buddysystembackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buddysystembackground.jpeg; sourceTree = "<group>"; };
 		CF56C7791CD4627A00CDA8BC /* facebookicon2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = facebookicon2.jpeg; sourceTree = "<group>"; };
+		CF56C77B1CD465CD00CDA8BC /* buddysystembackground2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buddysystembackground2.jpeg; sourceTree = "<group>"; };
+		CF56C77D1CD465EF00CDA8BC /* gmailicon2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gmailicon2.jpeg; sourceTree = "<group>"; };
+		CF56C77F1CD4660800CDA8BC /* twittericon2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twittericon2.jpeg; sourceTree = "<group>"; };
 		CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewOne.swift; sourceTree = "<group>"; };
 		CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewOne.swift; sourceTree = "<group>"; };
 		EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -138,7 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				CF56C7791CD4627A00CDA8BC /* facebookicon2.jpeg */,
+				CF56C77B1CD465CD00CDA8BC /* buddysystembackground2.jpeg */,
 				CF56C7771CD4601B00CDA8BC /* buddysystembackground.jpeg */,
+				CF56C77D1CD465EF00CDA8BC /* gmailicon2.jpeg */,
+				CF56C77F1CD4660800CDA8BC /* twittericon2.jpeg */,
 				CF56C7751CD4585000CDA8BC /* quit4moneybackground.jpeg */,
 				7EC76F5A1CC1DAD1002E4DB3 /* CVCalender */,
 				7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */,
@@ -261,8 +270,11 @@
 				CF56C7761CD4585000CDA8BC /* quit4moneybackground.jpeg in Resources */,
 				7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */,
 				CF56C7781CD4601B00CDA8BC /* buddysystembackground.jpeg in Resources */,
+				CF56C77C1CD465CD00CDA8BC /* buddysystembackground2.jpeg in Resources */,
+				CF56C7801CD4660800CDA8BC /* twittericon2.jpeg in Resources */,
 				7ED4ED701CC0874C0004C7B3 /* Assets.xcassets in Resources */,
 				7E36B2071CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle in Resources */,
+				CF56C77E1CD465EF00CDA8BC /* gmailicon2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -518,7 +518,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buddysystembackground" translatesAutoresizingMaskIntoConstraints="NO" id="4tc-1i-dAU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buddysystembackground2" translatesAutoresizingMaskIntoConstraints="NO" id="4tc-1i-dAU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4U-03-gut">
@@ -534,32 +534,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAq-Iz-yFm">
-                                <rect key="frame" x="31" y="297.5" width="69" height="65"/>
-                                <state key="normal" title="Button" image="facebookicon2"/>
+                                <rect key="frame" x="39" y="150" width="69" height="65"/>
                                 <connections>
                                     <segue destination="AFw-lT-vEc" kind="show" id="sAJ-ef-b2n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMU-Ga-aei">
-                                <rect key="frame" x="159" y="295" width="69" height="73"/>
-                                <state key="normal" title="Button" image="Twitter-icon"/>
+                                <rect key="frame" x="39" y="241" width="69" height="73"/>
                                 <connections>
                                     <segue destination="Tft-xH-PmL" kind="show" id="8QE-of-y1q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jom-J9-EYK">
-                                <rect key="frame" x="281" y="289" width="69" height="83.5"/>
-                                <state key="normal" title="Button" image="gmail"/>
+                                <rect key="frame" x="39" y="327" width="69" height="83.5"/>
                                 <connections>
                                     <segue destination="SXu-CA-plZ" kind="show" id="jD0-1X-eBf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="log in to find your friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-aC-nY2">
-                                <rect key="frame" x="36" y="408" width="253" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1727,8 +1718,8 @@ Yerim Park</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rr5-nQ-YpC">
-                                <rect key="frame" x="154" y="189" width="69" height="73"/>
-                                <state key="normal" title="Button" image="Twitter-icon"/>
+                                <rect key="frame" x="154" y="189" width="59" height="57"/>
+                                <state key="normal" title="Button" image="twittericon2.jpeg"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1830,8 +1821,8 @@ Yerim Park</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pM-p0-19p">
-                                <rect key="frame" x="141" y="180" width="69" height="83.5"/>
-                                <state key="normal" title="Button" image="gmail"/>
+                                <rect key="frame" x="147" y="190" width="62" height="63.5"/>
+                                <state key="normal" title="Button" image="gmailicon2"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1893,11 +1884,11 @@ Yerim Park</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buddysystembackground" translatesAutoresizingMaskIntoConstraints="NO" id="sPZ-LY-9qc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="buddysystembackground2" translatesAutoresizingMaskIntoConstraints="NO" id="sPZ-LY-9qc">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWp-HU-bnP">
-                                <rect key="frame" x="36" y="202" width="56" height="62"/>
+                                <rect key="frame" x="34" y="224" width="56" height="62"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1909,32 +1900,23 @@ Yerim Park</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L50-cc-ehQ">
-                                <rect key="frame" x="31" y="297.5" width="69" height="65"/>
-                                <state key="normal" title="Button" image="facebookicon2"/>
+                                <rect key="frame" x="39" y="151" width="69" height="65"/>
                                 <connections>
                                     <segue destination="leG-UH-Dct" kind="show" id="4Ar-YK-qn0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xh-zi-Wma">
-                                <rect key="frame" x="159" y="295" width="69" height="73"/>
-                                <state key="normal" title="Button" image="Twitter-icon"/>
+                                <rect key="frame" x="39" y="241" width="69" height="73"/>
                                 <connections>
                                     <segue destination="MYh-9s-FeK" kind="show" id="BJP-7a-Bhu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qs1-T7-w9K">
-                                <rect key="frame" x="281" y="289" width="69" height="83.5"/>
-                                <state key="normal" title="Button" image="gmail"/>
+                                <rect key="frame" x="39" y="322" width="69" height="83.5"/>
                                 <connections>
                                     <segue destination="MNI-FT-TuF" kind="show" id="CD1-Mu-YYj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="log in to find your friend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgk-uc-sFP">
-                                <rect key="frame" x="36" y="408" width="253" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2136,8 +2118,8 @@ Yerim Park</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t3O-DD-Jsg">
-                                <rect key="frame" x="154" y="189" width="69" height="73"/>
-                                <state key="normal" title="Button" image="Twitter-icon"/>
+                                <rect key="frame" x="154" y="189" width="65" height="64"/>
+                                <state key="normal" title="Button" image="twittericon2.jpeg"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -2238,8 +2220,8 @@ Yerim Park</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIy-gJ-LMl">
-                                <rect key="frame" x="141" y="180" width="69" height="83.5"/>
-                                <state key="normal" title="Button" image="gmail"/>
+                                <rect key="frame" x="141" y="190" width="72" height="64.5"/>
+                                <state key="normal" title="Button" image="gmailicon2"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -2255,7 +2237,6 @@ Yerim Park</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Twitter-icon" width="256" height="256"/>
         <image name="adam" width="633" height="633"/>
         <image name="avatar" width="90" height="159"/>
         <image name="ben" width="400" height="400"/>
@@ -2263,13 +2244,14 @@ Yerim Park</string>
         <image name="buddy_2" width="750" height="1334"/>
         <image name="buddy_3" width="750" height="1334"/>
         <image name="buddysystembackground" width="750" height="1334"/>
+        <image name="buddysystembackground2" width="750" height="1334"/>
         <image name="chat_bar_big" width="321" height="49"/>
         <image name="chat_bar_small" width="750" height="1334"/>
         <image name="emergency" width="750" height="123"/>
         <image name="enable" width="318" height="96"/>
         <image name="end_bar" width="168" height="153"/>
         <image name="facebookicon2" width="87" height="88"/>
-        <image name="gmail" width="500" height="500"/>
+        <image name="gmailicon2" width="87" height="88"/>
         <image name="icon-56317" width="128" height="128"/>
         <image name="icon-chat-active" width="29" height="29"/>
         <image name="icon-home" width="29" height="29"/>
@@ -2280,6 +2262,7 @@ Yerim Park</string>
         <image name="quitmoney1" width="750" height="1334"/>
         <image name="quitmoney2" width="750" height="1334"/>
         <image name="quitmoney4" width="750" height="1334"/>
+        <image name="twittericon2.jpeg" width="87" height="88"/>
         <image name="unchecked_checkbox" width="64" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
