@@ -567,7 +567,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWJ-6a-nle" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1861.5" y="1297.5"/>
+            <point key="canvasLocation" x="1861.5" y="1329.5"/>
         </scene>
         <!--Q4M-->
         <scene sceneID="9q7-jf-cbD">
@@ -1222,7 +1222,6 @@ Yerim Park</string>
         <!--Buddy System1-->
         <scene sceneID="tgy-30-ggD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zYJ-eK-x2F" sceneMemberID="firstResponder"/>
                 <viewController id="rsa-Ku-oRI" userLabel="Buddy System1" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dbg-V5-Lyp"/>
@@ -1253,13 +1252,13 @@ Yerim Park</string>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYJ-eK-x2F" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1842.5" y="-172.5"/>
         </scene>
         <!--Buddy System1-->
         <scene sceneID="b9C-NC-4Vj">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mW6-1g-ErF" sceneMemberID="firstResponder"/>
                 <viewController id="c20-3Q-FB1" userLabel="Buddy System1" customClass="ViewController" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3ej-2o-eVP"/>
@@ -1279,6 +1278,7 @@ Yerim Park</string>
                                 <state key="normal" title="Continue"/>
                                 <connections>
                                     <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="1OO-0k-L4H"/>
+                                    <segue destination="zyx-bQ-AGV" kind="show" id="NBE-r7-dzW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1288,10 +1288,8 @@ Yerim Park</string>
                     <navigationItem key="navigationItem" title="Buddy System" id="RRD-NO-8l1"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="zyx-bQ-AGV" kind="show" id="CJr-ue-Cnf"/>
-                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mW6-1g-ErF" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1842.5" y="566.5"/>
         </scene>
