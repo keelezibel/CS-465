@@ -46,6 +46,8 @@
 		CF56C75E1CC07F6700CDA8BC /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C75D1CC07F6700CDA8BC /* FileUtils.swift */; };
 		CF56C7661CC1CF6000CDA8BC /* RegisterSaveOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7651CC1CF6000CDA8BC /* RegisterSaveOne.swift */; };
 		CF56C7681CC1D43D00CDA8BC /* BadgeViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7671CC1D43D00CDA8BC /* BadgeViewTwo.swift */; };
+		CF56C7721CD43EDF00CDA8BC /* QuitfMoneyReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7711CD43EDF00CDA8BC /* QuitfMoneyReg.swift */; };
+		CF56C7741CD43EE300CDA8BC /* QuitfMoneySave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7731CD43EE300CDA8BC /* QuitfMoneySave.swift */; };
 		CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */; };
 		CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */; };
 		EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */; };
@@ -94,6 +96,8 @@
 		CF56C75D1CC07F6700CDA8BC /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 		CF56C7651CC1CF6000CDA8BC /* RegisterSaveOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterSaveOne.swift; sourceTree = "<group>"; };
 		CF56C7671CC1D43D00CDA8BC /* BadgeViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewTwo.swift; sourceTree = "<group>"; };
+		CF56C7711CD43EDF00CDA8BC /* QuitfMoneyReg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitfMoneyReg.swift; sourceTree = "<group>"; };
+		CF56C7731CD43EE300CDA8BC /* QuitfMoneySave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitfMoneySave.swift; sourceTree = "<group>"; };
 		CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewOne.swift; sourceTree = "<group>"; };
 		CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewOne.swift; sourceTree = "<group>"; };
 		EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 				CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */,
 				CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */,
 				CF56C75D1CC07F6700CDA8BC /* FileUtils.swift */,
+				CF56C7711CD43EDF00CDA8BC /* QuitfMoneyReg.swift */,
+				CF56C7731CD43EE300CDA8BC /* QuitfMoneySave.swift */,
 				CF56C7651CC1CF6000CDA8BC /* RegisterSaveOne.swift */,
 				CF56C7671CC1D43D00CDA8BC /* BadgeViewTwo.swift */,
 			);
@@ -260,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EC76F8F1CC1DB1D002E4DB3 /* CVSet.swift in Sources */,
+				CF56C7721CD43EDF00CDA8BC /* QuitfMoneyReg.swift in Sources */,
 				7EC76F801CC1DB1D002E4DB3 /* CVCalendarTouchController.swift in Sources */,
 				7EC76F791CC1DB1D002E4DB3 /* CVCalendarDayView.swift in Sources */,
 				7EC76F771CC1DB1D002E4DB3 /* CVAuxiliaryView.swift in Sources */,
@@ -267,6 +274,7 @@
 				EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */,
 				7EC76F881CC1DB1D002E4DB3 /* CVCalendarWeekContentViewController.swift in Sources */,
 				7EC76F851CC1DB1D002E4DB3 /* CVCalendarViewAppearanceDelegate.swift in Sources */,
+				CF56C7741CD43EE300CDA8BC /* QuitfMoneySave.swift in Sources */,
 				7EC76F891CC1DB1D002E4DB3 /* CVCalendarWeekday.swift in Sources */,
 				7EC76F7F1CC1DB1D002E4DB3 /* CVCalendarMonthView.swift in Sources */,
 				7EC76F911CC1DB1D002E4DB3 /* CVWeekdaySymbolType.swift in Sources */,
