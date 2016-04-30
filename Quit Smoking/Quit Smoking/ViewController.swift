@@ -110,7 +110,7 @@ class MainUI:UIViewController{
         starttimer()
         
         let nav_bar_header = "Settings"
-        let items = ["Modify Profile", "Badges", "Change Quit 4 Money Plan", "Product Info"]
+        let items = ["Modify Profile", "Badges", "Change Quit 4 Money Plan", "Buddy System","Product Info"]
         self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -141,6 +141,11 @@ class MainUI:UIViewController{
                 self.showViewController(vc as! UIViewController, sender: vc)
             }
             if (indexPath == 3){
+                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("buddy_main")
+                self.showViewController(vc as! UIViewController, sender: vc)
+                
+            }
+            if (indexPath == 4){
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Product_Info")
                 self.showViewController(vc as! UIViewController, sender: vc)
             }

@@ -13,6 +13,7 @@
 		7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0CAAC91CA729B300251288 /* LaunchScreen.storyboard */; };
 		7E36B2071CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7E36B2061CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle */; };
 		7E36B2091CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */; };
+		7EBDEFA81CD4F6570031BD28 /* twittericon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EBDEFA71CD4F6570031BD28 /* twittericon2.png */; };
 		7EC1E1DD1CA7373000A41297 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */; };
 		7EC76F771CC1DB1D002E4DB3 /* CVAuxiliaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC76F5B1CC1DB1D002E4DB3 /* CVAuxiliaryView.swift */; };
 		7EC76F781CC1DB1D002E4DB3 /* CVCalendarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC76F5D1CC1DB1D002E4DB3 /* CVCalendarContentViewController.swift */; };
@@ -47,12 +48,6 @@
 		CF56C7681CC1D43D00CDA8BC /* BadgeViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7671CC1D43D00CDA8BC /* BadgeViewTwo.swift */; };
 		CF56C7721CD43EDF00CDA8BC /* QuitfMoneyReg.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7711CD43EDF00CDA8BC /* QuitfMoneyReg.swift */; };
 		CF56C7741CD43EE300CDA8BC /* QuitfMoneySave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF56C7731CD43EE300CDA8BC /* QuitfMoneySave.swift */; };
-		CF56C7761CD4585000CDA8BC /* quit4moneybackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C7751CD4585000CDA8BC /* quit4moneybackground.jpeg */; };
-		CF56C7781CD4601B00CDA8BC /* buddysystembackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C7771CD4601B00CDA8BC /* buddysystembackground.jpeg */; };
-		CF56C77A1CD4627A00CDA8BC /* facebookicon2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C7791CD4627A00CDA8BC /* facebookicon2.jpeg */; };
-		CF56C77C1CD465CD00CDA8BC /* buddysystembackground2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C77B1CD465CD00CDA8BC /* buddysystembackground2.jpeg */; };
-		CF56C77E1CD465EF00CDA8BC /* gmailicon2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C77D1CD465EF00CDA8BC /* gmailicon2.jpeg */; };
-		CF56C7801CD4660800CDA8BC /* twittericon2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CF56C77F1CD4660800CDA8BC /* twittericon2.jpeg */; };
 		CFBEE1B11CBDECF7009B73CB /* RegisterViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */; };
 		CFBEE1B51CBDFDA6009B73CB /* BadgeViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */; };
 		EFF92FA21CBB3241006F0AC8 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */; };
@@ -67,6 +62,7 @@
 		7E0CAACC1CA729B300251288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E36B2061CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
 		7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
+		7EBDEFA71CD4F6570031BD28 /* twittericon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twittericon2.png; path = ../../../../../../../../Downloads/twittericon2.png; sourceTree = "<group>"; };
 		7EC1E1DC1CA7373000A41297 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
 		7EC76F5B1CC1DB1D002E4DB3 /* CVAuxiliaryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CVAuxiliaryView.swift; path = CVCalendar/CVAuxiliaryView.swift; sourceTree = "<group>"; };
 		7EC76F5C1CC1DB1D002E4DB3 /* CVCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CVCalendar.h; path = CVCalendar/CVCalendar.h; sourceTree = "<group>"; };
@@ -102,12 +98,6 @@
 		CF56C7671CC1D43D00CDA8BC /* BadgeViewTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewTwo.swift; sourceTree = "<group>"; };
 		CF56C7711CD43EDF00CDA8BC /* QuitfMoneyReg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitfMoneyReg.swift; sourceTree = "<group>"; };
 		CF56C7731CD43EE300CDA8BC /* QuitfMoneySave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuitfMoneySave.swift; sourceTree = "<group>"; };
-		CF56C7751CD4585000CDA8BC /* quit4moneybackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = quit4moneybackground.jpeg; sourceTree = "<group>"; };
-		CF56C7771CD4601B00CDA8BC /* buddysystembackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buddysystembackground.jpeg; sourceTree = "<group>"; };
-		CF56C7791CD4627A00CDA8BC /* facebookicon2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = facebookicon2.jpeg; sourceTree = "<group>"; };
-		CF56C77B1CD465CD00CDA8BC /* buddysystembackground2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buddysystembackground2.jpeg; sourceTree = "<group>"; };
-		CF56C77D1CD465EF00CDA8BC /* gmailicon2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gmailicon2.jpeg; sourceTree = "<group>"; };
-		CF56C77F1CD4660800CDA8BC /* twittericon2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twittericon2.jpeg; sourceTree = "<group>"; };
 		CFBEE1B01CBDECF7009B73CB /* RegisterViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewOne.swift; sourceTree = "<group>"; };
 		CFBEE1B41CBDFDA6009B73CB /* BadgeViewOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewOne.swift; sourceTree = "<group>"; };
 		EFF92FA11CBB3241006F0AC8 /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
@@ -143,12 +133,7 @@
 		7E0CAABF1CA729B300251288 /* Quit Smoking */ = {
 			isa = PBXGroup;
 			children = (
-				CF56C7791CD4627A00CDA8BC /* facebookicon2.jpeg */,
-				CF56C77B1CD465CD00CDA8BC /* buddysystembackground2.jpeg */,
-				CF56C7771CD4601B00CDA8BC /* buddysystembackground.jpeg */,
-				CF56C77D1CD465EF00CDA8BC /* gmailicon2.jpeg */,
-				CF56C77F1CD4660800CDA8BC /* twittericon2.jpeg */,
-				CF56C7751CD4585000CDA8BC /* quit4moneybackground.jpeg */,
+				7EBDEFA71CD4F6570031BD28 /* twittericon2.png */,
 				7EC76F5A1CC1DAD1002E4DB3 /* CVCalender */,
 				7E36B2081CBDF41700E9B4A4 /* BTNavigationDropdownMenu.swift */,
 				7E36B2061CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle */,
@@ -265,16 +250,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF56C77A1CD4627A00CDA8BC /* facebookicon2.jpeg in Resources */,
+				7EBDEFA81CD4F6570031BD28 /* twittericon2.png in Resources */,
 				7E0CAACB1CA729B300251288 /* LaunchScreen.storyboard in Resources */,
-				CF56C7761CD4585000CDA8BC /* quit4moneybackground.jpeg in Resources */,
 				7E0CAAC61CA729B300251288 /* Main.storyboard in Resources */,
-				CF56C7781CD4601B00CDA8BC /* buddysystembackground.jpeg in Resources */,
-				CF56C77C1CD465CD00CDA8BC /* buddysystembackground2.jpeg in Resources */,
-				CF56C7801CD4660800CDA8BC /* twittericon2.jpeg in Resources */,
 				7ED4ED701CC0874C0004C7B3 /* Assets.xcassets in Resources */,
 				7E36B2071CBDF41000E9B4A4 /* BTNavigationDropdownMenu.bundle in Resources */,
-				CF56C77E1CD465EF00CDA8BC /* gmailicon2.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
