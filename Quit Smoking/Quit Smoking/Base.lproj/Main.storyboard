@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bb7-Rn-cSk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bb7-Rn-cSk">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -552,21 +552,21 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiT-46-isF">
-                                <rect key="frame" x="154" y="566" width="201" height="58"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Continue"/>
-                                <connections>
-                                    <segue destination="ujv-8G-uja" kind="show" id="vRy-mG-OV9"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="yes, I want to use buddy system function" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBy-rf-AVQ">
                                 <rect key="frame" x="68" y="404" width="280" height="25"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wiT-46-isF">
+                                <rect key="frame" x="154" y="566" width="201" height="58"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <segue destination="q3t-xS-ePt" kind="show" id="QHA-fl-QKx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -578,6 +578,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWJ-6a-nle" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1861.5" y="1329.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vxp-Xl-pMe">
+            <objects>
+                <viewController id="q3t-xS-ePt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j0X-rB-I5c"/>
+                        <viewControllerLayoutGuide type="bottom" id="IYc-kA-icW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NMy-zK-o6z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quitmoney1" translatesAutoresizingMaskIntoConstraints="NO" id="kKU-JB-Uou">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muX-x3-MyS">
+                                <rect key="frame" x="159" y="589" width="201" height="58"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="KdO-p1-ut3"/>
+                                    <segue destination="tUa-Kh-W27" kind="show" id="nBl-S3-Phf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4os-JC-y2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342.5" y="1276.5"/>
         </scene>
         <!--Q4M-->
         <scene sceneID="9q7-jf-cbD">
@@ -691,7 +725,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Rp-CK-S4f" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2325.5" y="1115.5"/>
+            <point key="canvasLocation" x="3430.5" y="1137.5"/>
         </scene>
         <!--Badges-->
         <scene sceneID="WEk-wu-IKu">
@@ -1076,7 +1110,7 @@ Yerim Park</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1VT-lZ-9O8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2393.5" y="2088.5"/>
+            <point key="canvasLocation" x="2545.5" y="2041.5"/>
         </scene>
         <!--BadgesInfo-->
         <scene sceneID="adv-gA-l1Z">
@@ -1126,7 +1160,7 @@ Yerim Park</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ae-ej-69b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2844.5" y="2079.5"/>
+            <point key="canvasLocation" x="3224.5" y="2095.5"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="KPE-cy-VCm">
@@ -1303,6 +1337,97 @@ Yerim Park</string>
             </objects>
             <point key="canvasLocation" x="1842.5" y="566.5"/>
         </scene>
+        <!--q4m1-->
+        <scene sceneID="r6V-YA-j5c">
+            <objects>
+                <viewController id="tUa-Kh-W27" userLabel="q4m1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="985-e1-ZAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="FfL-DL-n5f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="da1-RP-njQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quitmoney2" translatesAutoresizingMaskIntoConstraints="NO" id="0l2-QI-D73">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7z-16-wZ0">
+                                <rect key="frame" x="161" y="589" width="201" height="58"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Continue"/>
+                                <connections>
+                                    <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="oRm-dW-YKN"/>
+                                    <segue destination="SUi-b0-tOy" kind="show" id="zoc-St-CSc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s3b-5q-51u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2848.5" y="1123.5"/>
+        </scene>
+        <!--q4m2-->
+        <scene sceneID="5pk-DM-1TT">
+            <objects>
+                <viewController id="SUi-b0-tOy" userLabel="q4m2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Us6-bX-bmh"/>
+                        <viewControllerLayoutGuide type="bottom" id="F9d-V9-Dvt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uLa-bu-b8M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="v1B-5W-Ygj">
+                                <rect key="frame" x="203" y="491" width="379" height="96"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gcF-if-0P0">
+                                        <rect key="frame" x="0.0" y="0.0" width="379" height="96"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uua-xs-wiN">
+                                                <rect key="frame" x="0.0" y="0.0" width="379" height="96"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdb-cQ-TAu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="379" height="96"/>
+                                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="Continue" image="diable"/>
+                                                        <connections>
+                                                            <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="bnn-lz-Cg7"/>
+                                                            <segue destination="BYZ-38-t0r" kind="show" id="Ask-jC-9sE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7g-d6-n6w">
+                                <rect key="frame" x="13" y="491" width="175" height="49"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continue" image="enable"/>
+                                <connections>
+                                    <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="TkJ-bv-MZ3"/>
+                                    <segue destination="ujv-8G-uja" kind="show" id="sVV-ep-GtV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="quitmoney4" translatesAutoresizingMaskIntoConstraints="NO" id="Pyc-RG-U1v">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ak-E1-i4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3034.5" y="364.5"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Twitter-icon" width="256" height="256"/>
@@ -1313,7 +1438,9 @@ Yerim Park</string>
         <image name="buddy_2" width="750" height="1334"/>
         <image name="chat_bar_big" width="321" height="49"/>
         <image name="chat_bar_small" width="750" height="1334"/>
+        <image name="diable" width="306" height="96"/>
         <image name="emergency" width="750" height="123"/>
+        <image name="enable" width="318" height="96"/>
         <image name="end_bar" width="168" height="153"/>
         <image name="gmail" width="500" height="500"/>
         <image name="icon-56317" width="128" height="128"/>
@@ -1322,10 +1449,13 @@ Yerim Park</string>
         <image name="main" width="750" height="1334"/>
         <image name="main_background" width="750" height="608"/>
         <image name="max" width="306" height="306"/>
+        <image name="quitmoney1" width="750" height="1334"/>
+        <image name="quitmoney2" width="750" height="1334"/>
+        <image name="quitmoney4" width="750" height="1334"/>
         <image name="social_facebook_box_blue" width="512" height="512"/>
         <image name="unchecked_checkbox" width="64" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JkD-31-gUm"/>
+        <segue reference="Ask-jC-9sE"/>
     </inferredMetricsTieBreakers>
 </document>
