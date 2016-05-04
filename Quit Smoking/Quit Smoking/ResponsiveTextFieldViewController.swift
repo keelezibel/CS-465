@@ -49,7 +49,7 @@ class ResponsiveTextFieldViewController : UIViewController
         
         if let info = notification.userInfo {
             self.keyboardFrame = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-            self.arrangeViewOffsetFromKeyboard()
+         //   self.arrangeViewOffsetFromKeyboard()
         }
         
     }

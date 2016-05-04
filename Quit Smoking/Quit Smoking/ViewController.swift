@@ -106,11 +106,12 @@ class MainUI:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         monthLabel.text = CVDate(date: NSDate()).globalDescription
+        self.navigationItem.hidesBackButton = true;
         
         starttimer()
         
         let nav_bar_header = "Settings"
-        let items = ["Modify Profile", "Badges", "Change Quit 4 Money Plan", "Buddy System","Product Info"]
+        let items = ["I Smoked", "Badges", "Change Quit 4 Money Plan", "Buddy System","Product Info"]
         self.navigationController?.navigationBar.translucent = true
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.0/255.0, green:180/255.0, blue:220/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -127,10 +128,19 @@ class MainUI:UIViewController{
         menuView.maskBackgroundColor = UIColor.blackColor()
         menuView.maskBackgroundOpacity = 0.3
         menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
-            if (indexPath == 0){
+          /*  if (indexPath == 0){
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Profile")
                 self.showViewController(vc as! UIViewController, sender: vc)
                 
+            }*/
+            if (indexPath == 0){
+                let alert = UIAlertController(title: "No Coin for Today",
+                                              message: "Keep trying!",
+                                              preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Close", style: UIAlertActionStyle.Default, handler: {
+                    action in self.starttimer()
+                }))
+                self.presentViewController(alert, animated: true, completion:nil)
             }
             if (indexPath == 1){
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Badges")
@@ -149,6 +159,8 @@ class MainUI:UIViewController{
                 let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("Product_Info")
                 self.showViewController(vc as! UIViewController, sender: vc)
             }
+            
+            
             
         }
         self.navigationItem.titleView = menuView
@@ -317,7 +329,7 @@ extension MainUI: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
     
     func supplementaryView(shouldDisplayOnDayView dayView: DayView) -> Bool {
         let month = 4
-        let day = 1...24
+        let day = 1...30
         if let date = dayView.date {
             if( day.contains(date.day) && date.month == month) {
                 return true

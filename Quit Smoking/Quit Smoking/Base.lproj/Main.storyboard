@@ -203,7 +203,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FiZ-Nb-NNk">
-                                <rect key="frame" x="156" y="543" width="201" height="58"/>
+                                <rect key="frame" x="199" y="543" width="158" height="58"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Continue"/>
@@ -219,7 +219,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBs-SC-ygb">
-                                <rect key="frame" x="20" y="434" width="158" height="115"/>
+                                <rect key="frame" x="20" y="434" width="163" height="115"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="pyq-xD-Fee" id="7NW-d3-sMu"/>
@@ -655,7 +655,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="card number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4R-jR-qzj">
                                 <rect key="frame" x="28" y="182" width="111" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="card holder:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ya-Hq-Zqe">
@@ -1250,7 +1250,7 @@ Yerim Park</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSG-do-m9B">
                                 <rect key="frame" x="206" y="492" width="149" height="43"/>
                                 <connections>
-                                    <segue destination="VKD-QO-k2O" kind="show" id="PWs-8d-nYn"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="4va-Xl-WWu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1300,7 +1300,7 @@ Yerim Park</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="card number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUT-G9-PPH">
                                 <rect key="frame" x="28" y="182" width="111" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="card holder:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6l-0v-p8e">
@@ -1322,7 +1322,7 @@ Yerim Park</string>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="savebutton:" destination="tvh-bN-N0h" eventType="touchUpInside" id="IQn-I0-8yx"/>
-                                    <segue destination="o7E-4R-Ag9" kind="push" id="6Fh-sr-xgV"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="NFD-dM-G0C"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1733,7 +1733,7 @@ Yerim Park</string>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="GZG-mq-Bh6"/>
-                                    <segue destination="o7E-4R-Ag9" kind="show" id="s6m-6I-p2d"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="Mb2-rl-ZkH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1836,7 +1836,7 @@ Yerim Park</string>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="eHH-44-3U4"/>
-                                    <segue destination="o7E-4R-Ag9" kind="show" id="oaF-Pt-4A8"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="dtB-Qd-7JW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1939,7 +1939,7 @@ Yerim Park</string>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="createAccount:" destination="pyq-xD-Fee" eventType="touchUpInside" id="goB-Yu-FJ0"/>
-                                    <segue destination="o7E-4R-Ag9" kind="show" id="JZL-cJ-3b7"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="hM7-K1-kyr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1957,7 +1957,7 @@ Yerim Park</string>
         <!--Profile-->
         <scene sceneID="aXI-uG-p2K">
             <objects>
-                <viewController storyboardIdentifier="Profile" title="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LWT-ts-Hs4" userLabel="Profile" customClass="RegisterViewOne" customModule="Quit_Smoking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Profile" title="Profile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LWT-ts-Hs4" userLabel="Profile" customClass="RegisterSaveOne" customModule="Quit_Smoking" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6R3-aP-5gI"/>
                         <viewControllerLayoutGuide type="bottom" id="bhN-CY-Ygm"/>
@@ -2068,12 +2068,14 @@ Yerim Park</string>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsf-1w-bK1">
-                                <rect key="frame" x="156" y="543" width="201" height="58"/>
+                                <rect key="frame" x="204" y="544" width="153" height="57"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
+                                    <action selector="changeAccount:" destination="LWT-ts-Hs4" eventType="touchUpInside" id="uXp-uQ-45m"/>
                                     <action selector="createAccount:" destination="LWT-ts-Hs4" eventType="touchUpInside" id="MpB-Fu-MLr"/>
+                                    <segue destination="o7E-4R-Ag9" kind="showDetail" action="showViewController:sender:" id="bNe-if-1kO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#Packs per week" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeZ-6U-QYK">
@@ -2083,7 +2085,7 @@ Yerim Park</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vfr-ur-T4k">
-                                <rect key="frame" x="20" y="445" width="146" height="119"/>
+                                <rect key="frame" x="20" y="445" width="155" height="119"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="LWT-ts-Hs4" id="OpP-HL-VE6"/>
@@ -2098,6 +2100,11 @@ Yerim Park</string>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="Picker1" destination="Vfr-ur-T4k" id="Z98-Ry-131"/>
+                        <outlet property="UserAgeReg" destination="wHQ-mq-DjN" id="mBp-ho-sBW"/>
+                        <outlet property="UserFnameReg" destination="9Cm-vP-VD0" id="5Zq-1z-khz"/>
+                        <outlet property="UserNameReg" destination="DMQ-Df-jPH" id="LWS-gM-RVC"/>
+                        <outlet property="UserPwConfirm" destination="Olo-lh-cO0" id="Kwb-o0-yQW"/>
+                        <outlet property="UserPwReg" destination="C9H-Jf-UM9" id="2dk-6x-UEG"/>
                         <outlet property="userAgeReg" destination="wHQ-mq-DjN" id="AG1-YO-oOp"/>
                         <outlet property="userFnameReg" destination="9Cm-vP-VD0" id="gfr-YB-ufs"/>
                         <outlet property="userLnameReg" destination="Kza-ek-cE5" id="Dkj-SQ-9Yt"/>
@@ -2128,13 +2135,13 @@ Yerim Park</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We have returned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXj-d2-GAc">
                                 <rect key="frame" x="38" y="252" width="222" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="149" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6J-h6-bfK">
                                 <rect key="frame" x="142" y="319" width="69" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dollars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lX-0c-vBN">
@@ -2152,17 +2159,17 @@ Yerim Park</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bic-ys-5NB">
                                 <rect key="frame" x="142" y="452" width="175" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBI-or-ZqB">
-                                <rect key="frame" x="154" y="579" width="201" height="58"/>
+                                <rect key="frame" x="154" y="513" width="201" height="58"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <state key="normal" title="Ok"/>
                                 <connections>
                                     <action selector="savebutton:" destination="tvh-bN-N0h" eventType="touchUpInside" id="Roz-kr-Axf"/>
-                                    <segue destination="o7E-4R-Ag9" kind="show" id="ATY-GW-jfC"/>
+                                    <segue destination="o7E-4R-Ag9" kind="show" id="LcB-qD-LwJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2176,7 +2183,7 @@ Yerim Park</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aQ-Ta-Yg5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3753.5" y="1782.5"/>
+            <point key="canvasLocation" x="3748.5" y="1676.5"/>
         </scene>
         <!--q4m1_main-->
         <scene sceneID="OcV-Tx-2sM">
@@ -2206,7 +2213,7 @@ Yerim Park</string>
                                 <state key="normal" title="Ok"/>
                                 <connections>
                                     <action selector="savebutton:" destination="tvh-bN-N0h" eventType="touchUpInside" id="PmV-QF-ZOb"/>
-                                    <segue destination="o7E-4R-Ag9" kind="show" id="ZOS-nu-C2x"/>
+                                    <segue destination="o7E-4R-Ag9" kind="showDetail" action="showViewController:sender:" id="tKg-br-U47"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2252,8 +2259,8 @@ Yerim Park</string>
         <image name="unchecked_checkbox" width="64" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XkL-py-ia2"/>
         <segue reference="Zq5-Vf-lZ0"/>
-        <segue reference="ZOS-nu-C2x"/>
+        <segue reference="XkL-py-ia2"/>
+        <segue reference="LcB-qD-LwJ"/>
     </inferredMetricsTieBreakers>
 </document>
